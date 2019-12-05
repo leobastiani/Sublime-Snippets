@@ -1,0 +1,145 @@
+@dest: C:\Users\Leonardo\AppData\Roaming\Sublime Text 3\Packages\LeoCodeIntel\C snippets
+@scope: source.c, source.objc, source.c++, source.objc++
+
+
+
+// ctype.h
+isalnum(int c)
+isalpha(int c)
+isblank(int c)
+iscntrl(int c)
+isdigit(int c)
+islower(int c)
+tolower(int c)
+isupper(int c)
+toupper(int c)
+isspace(int c)
+isprint(int c)
+
+
+
+
+// math.h
+exp(double x) // pow(e, x)
+log(double x) // base e
+log10(double x)
+log2(double x)
+pow(base, exponent)
+sqrt(double x)
+ceil(double x)
+floor(double x)
+round(double x)
+abs(int x) // int abs
+fabs(double x) // double abs
+modf(double param, double *intpart) // return fraction part
+max(int x, int y)
+min(int x, int y)
+fmax(double x, double y)
+fmin(double x, double y)
+// funcoes trigonometricas
+cos(x)
+sin(x)
+tan(x)
+acos(x)
+asin(x)
+atan(x)
+
+
+
+
+// stdio.h
+fscanf(FILE *stream, char *format, ...)
+sprintf(char *str, const char *format, ...)
+snprintf(char *str, size_t n, char *format, ...) // char str[n]
+sscanf(char *str, char *format, ...)
+fgetc(FILE *stream)
+fgets(char *str, int str_size, FILE *stream)
+fputc(int character, FILE *stream)
+fputs(char *str, FILE *stream)
+putchar(int character)
+fopen(file_name, mode)
+fclose(FILE *stream)
+fread(void *ptr, data_size, data_count, FILE *stream)
+fwrite(void *ptr, data_size, data_count, FILE *stream)
+fseek(FILE *stream, offset, origin)
+ftell(FILE *stream)
+rewind(FILE *stream)
+freopen(char *file_name_src, mode, FILE *file_dest)
+remove(char *path)
+rename(char *old_path, char *new_path)
+tmpfile() // return FILE *
+tmpnam(char *buffer[L_tmpnam]) // return char *
+
+
+
+
+// stdlib.h
+atof(str)
+atoi(str)
+free(ptr)
+exit(int code)
+sizeof(type)
+qsort(void *array, size_t data_count, size_t data_size, int func_compar)
+bsearch(void *key, void *array, size_t data_count, size_t data_size, int func_compar)
+rand()
+srand(seed)
+
+calloc        (${3:void *}) calloc(${1:data_count}, sizeof(${2:data_size}))            calloc
+malloc        (${3:void *}) malloc(sizeof(${1:size}) * ${2:count})                     malloc
+realloc       (${4:void *}) realloc(${1:ptr}, sizeof(${2:new_size}) * ${3:count})      realloc
+
+
+
+
+
+// string.h
+strcpy(dest, src)
+strncpy(dest, src, n) // string[n]
+strcat(dest, src)
+strncat(dest, src, n) // n = strlen(src)
+strcmp(str1, str2)
+strchr(str, int character)
+strpbrk(src, char *key)
+strspn(src, char *key)
+strstr(str, char *key)
+strtok(str, char *delimiters)
+strlen(str)
+// memory functions
+memcpy(void *dest, void *src, size_t num)
+memmove(void *dest, void *src, size_t num)
+memcmp(void *ptr1, void *ptr2, size_t num)
+memchr(void *ptr, int value, size_t num) // return void *
+memset(void *ptr, int value, size_t num)
+
+
+
+
+
+// time.h
+time(time_t *tloc);
+// sys/time.h
+gettimeofday(struct timeval *tv, struct timezone *tz);
+
+
+
+
+// Multi-thread
+pthread_cond_broadcast(pthread_cond_t *cond)
+pthread_cond_signal(pthread_cond_t *cond)
+pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mutex)
+pthread_create(pthread_t *thread, pthread_attr_t *attr, void *funcStartRoutine, void *arg)
+pthread_exit(void *retval)
+pthread_join(pthread_t thread, void **retval)
+pthread_mutex_lock(pthread_mutex_t *mutex)
+pthread_mutex_unlock(pthread_mutex_t *mutex)
+pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr);
+pthread_kill(pthread_t thread, int sig)
+sem_init(sem_t *semVariable, 0, initValue)
+sem_post(sem_t *sem)
+sem_wait(sem_t *sem)
+
+
+
+// Snippets que não são do modo função
+clocks_per_sec                     CLOCKS_PER_SEC
+null                               NULL

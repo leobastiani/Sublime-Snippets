@@ -1,0 +1,370 @@
+Snippet   : multiply_with_hi_lo.sublime-snippet
+CDATA     : mult \$${1:s}, \$${2:t}
+Comentario: LO=(($s * $t)&lt;&lt;32)&gt;&gt;32; HI=($s * $t)&gt;&gt;32;
+
+
+Snippet   : divide_with_hi_lo.sublime-snippet
+CDATA     : div \$${1:s}, \$${2:t}
+Comentario: LO=$s / $t; HI=$s % $t
+
+
+Snippet   : multiply_unsigned_with_hi_lo.sublime-snippet
+CDATA     : multu \$${1:s}, \$${2:t}
+Comentario: LO=(($s * $t)&lt;&lt;32)&gt;&gt;32; HI=($s * $t)&gt;&gt;32;
+
+
+Snippet   : divide_unsigned_with_hi_lo.sublime-snippet
+CDATA     : divu \$${1:s}, \$${2:t}
+Comentario: LO=$s / $t; HI=$s % $t
+
+
+Snippet   : shift_right_arithmetic_immediate.sublime-snippet
+CDATA     : sra \$${1:d}, \$${2:t}, ${3:shamt}
+Comentario: shifts shamt number of bits
+
+
+Snippet   : shift_right_arithmetic.sublime-snippet
+CDATA     : srav \$${1:d}, \$${2:t}, \$${3:s}
+Comentario: shifts $s number of bits
+
+
+Snippet   : add_.sublime-snippet
+CDATA     : add \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = $s + $t
+
+
+Snippet   : subtract_.sublime-snippet
+CDATA     : sub \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = $s - $t
+
+
+Snippet   : and_.sublime-snippet
+CDATA     : and \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = $s & $t
+
+
+Snippet   : or_.sublime-snippet
+CDATA     : or \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = $s | $t
+
+
+Snippet   : nor_.sublime-snippet
+CDATA     : nor \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = ~ ($s | $t)
+
+
+Snippet   : jump_.sublime-snippet
+CDATA     : j ${1:Label}
+Comentario: PC = PC+4[31:28] . C*4
+
+
+Snippet   : add_unsigned.sublime-snippet
+CDATA     : addu \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = $s + $t
+
+
+Snippet   : subtract_unsigned.sublime-snippet
+CDATA     : subu \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = $s - $t
+
+
+Snippet   : add_immediate.sublime-snippet
+CDATA     : addi \$${1:t}, \$${2:s}, ${3:Label}
+Comentario: $t = $s + C (signed)
+
+
+Snippet   : add_immediate_unsigned.sublime-snippet
+CDATA     : addiu \$${1:t}, \$${2:s}, ${3:Label}
+Comentario: $t = $s + C (unsigned)
+
+
+Snippet   : load_word.sublime-snippet
+CDATA     : lw \$${1:t}, ${2:N}(\$${3:s})
+Comentario: $t = Memory[$s + C]
+
+
+Snippet   : load_halfword.sublime-snippet
+CDATA     : lh \$${1:t}, ${2:N}(\$${3:s})
+Comentario: $t = Memory[$s + C] (signed)
+
+
+Snippet   : load_halfword_unsigned.sublime-snippet
+CDATA     : lhu \$${1:t}, ${2:N}(\$${3:s})
+Comentario: $t = Memory[$s + C] (unsigned)
+
+
+Snippet   : load_byte.sublime-snippet
+CDATA     : lb \$${1:t}, ${2:N}(\$${3:s})
+Comentario: $t = Memory[$s + C] (signed)
+
+
+Snippet   : load_byte_unsigned.sublime-snippet
+CDATA     : lbu \$${1:t}, ${2:N}(\$${3:s})
+Comentario: $t = Memory[$s + C] (unsigned)
+
+
+Snippet   : store_word.sublime-snippet
+CDATA     : sw \$${1:t}, ${2:N}(\$${3:s})
+Comentario: Memory[$s + C] = $t
+
+
+Snippet   : store_half.sublime-snippet
+CDATA     : sh \$${1:t}, ${2:N}(\$${3:s})
+Comentario: Memory[$s + C] = $t
+
+
+Snippet   : store_byte.sublime-snippet
+CDATA     : sb \$${1:t}, ${2:N}(\$${3:s})
+Comentario: Memory[$s + C] = $t
+
+
+Snippet   : load_upper_immediate.sublime-snippet
+CDATA     : lui \$${1:t}, ${2:Label}
+Comentario: $t = C &lt;&lt; 16
+
+
+Snippet   : move_from_high.sublime-snippet
+CDATA     : mfhi \$${1:d}
+Comentario: $d = HI
+
+
+Snippet   : move_from_low.sublime-snippet
+CDATA     : mflo \$${1:d}
+Comentario: $d = LO
+
+
+Snippet   : move_from_control_register.sublime-snippet
+CDATA     : mfcZ \$${1:t}, \$${2:d}
+Comentario: $t = Coprocessor[Z].ControlRegister[$d]
+
+
+Snippet   : move_to_control_register.sublime-snippet
+CDATA     : mtcZ \$${1:t}, \$${2:d}
+Comentario: Coprocessor[Z].ControlRegister[$d] = $t
+
+
+Snippet   : and_immediate.sublime-snippet
+CDATA     : andi \$${1:t}, \$${2:s}, ${3:Label}
+Comentario: $t = $s & C
+
+
+Snippet   : or_immediate.sublime-snippet
+CDATA     : ori \$${1:t}, \$${2:s}, ${3:Label}
+Comentario: $t = $s | C
+
+
+Snippet   : exclusive_or.sublime-snippet
+CDATA     : xor \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = $s ^ $t
+
+
+Snippet   : set_on_less_than.sublime-snippet
+CDATA     : slt \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = ($s &lt; $t)
+
+
+Snippet   : set_on_less_than_unsigned.sublime-snippet
+CDATA     : sltu \$${1:d}, \$${2:s}, \$${3:t}
+Comentario: $d = ($s &lt; $t)
+
+
+Snippet   : set_on_less_than_immediate.sublime-snippet
+CDATA     : slti \$${1:t}, \$${2:s}, ${3:Label}
+Comentario: $t = ($s &lt; C)
+
+
+Snippet   : shift_left_logical_immediate.sublime-snippet
+CDATA     : sll \$${1:d}, \$${2:t}, ${3:shamt}
+Comentario: $d = $t &lt;&lt; shamt
+
+
+Snippet   : shift_right_logical_immediate.sublime-snippet
+CDATA     : srl \$${1:d}, \$${2:t}, ${3:shamt}
+Comentario: $d = $t &gt;&gt; shamt
+
+
+Snippet   : shift_left_logical.sublime-snippet
+CDATA     : sllv \$${1:d}, \$${2:t}, \$${3:s}
+Comentario: $d = $t &lt;&lt; $s
+
+
+Snippet   : shift_right_logical.sublime-snippet
+CDATA     : srlv \$${1:d}, \$${2:t}, \$${3:s}
+Comentario: $d = $t &gt;&gt; $s
+
+
+Snippet   : branch_on_equal.sublime-snippet
+CDATA     : beq \$${1:s}, \$${2:t}, ${3:Label}
+Comentario: if ($s == $t) go to PC+4+4*C
+
+
+Snippet   : branch_on_not_equal.sublime-snippet
+CDATA     : bne \$${1:s}, \$${2:t}, ${3:Label}
+Comentario: if ($s != $t) go to PC+4+4*C
+
+
+Snippet   : jump_register.sublime-snippet
+CDATA     : jr \$${1:s}
+Comentario: goto address $s
+
+
+Snippet   : jump_and_link.sublime-snippet
+CDATA     : jal ${1:Label}
+Comentario: $31 = PC + 4; PC = PC+4[31:28] . C*4
+
+
+Snippet   : move_.sublime-snippet
+CDATA     : move \$${1:rt},\$${2:rs}
+Comentario: add $rt,$rs,$zero
+
+
+Snippet   : clear_.sublime-snippet
+CDATA     : clear \$${1:rt}
+Comentario: add $rt,$zero,$zero
+
+
+Snippet   : not_.sublime-snippet
+CDATA     : not \$${1:rt},\$${2:rs}
+Comentario: nor $rt,$rs,$zero
+
+
+Snippet   : float_add_single.sublime-snippet
+CDATA     : add.s \$${1:x},\$${2:y},\$${3:z}
+Comentario: $x = $y + $z
+
+
+Snippet   : float_subtract_single.sublime-snippet
+CDATA     : sub.s \$${1:x},\$${2:y},\$${3:z}
+Comentario: $x = $y - $z
+
+
+Snippet   : float_multiply_single.sublime-snippet
+CDATA     : mul.s \$${1:x},\$${2:y},\$${3:z}
+Comentario: $x = $y * $z
+
+
+Snippet   : float_divide_single.sublime-snippet
+CDATA     : div.s \$${1:x},\$${2:y},\$${3:z}
+Comentario: $x = $y / $z
+
+
+Snippet   : float_add_double.sublime-snippet
+CDATA     : add.d \$${1:x},\$${2:y},\$${3:z}
+Comentario: $x = $y + $z
+
+
+Snippet   : float_subtract_double.sublime-snippet
+CDATA     : sub.d \$${1:x},\$${2:y},\$${3:z}
+Comentario: $x = $y - $z
+
+
+Snippet   : float_multiply_double.sublime-snippet
+CDATA     : mul.d \$${1:x},\$${2:y},\$${3:z}
+Comentario: $x = $y * $z
+
+
+Snippet   : float_divide_double.sublime-snippet
+CDATA     : div.d \$${1:x},\$${2:y},\$${3:z}
+Comentario: $x = $y / $z
+
+
+Snippet   : load_word_coprocessor.sublime-snippet
+CDATA     : lwcZ \$${1:x},${2:CONST(\$y)}
+Comentario: Coprocessor[Z].DataRegister[$x] = Memory[$y + CONST]
+
+
+Snippet   : store_word_coprocessor.sublime-snippet
+CDATA     : swcZ \$${1:x},${2:CONST(\$y)}
+Comentario: Memory[$y + CONST] = Coprocessor[Z].DataRegister[$x]
+
+
+Snippet   : float_compare_single.sublime-snippet
+CDATA     : c.lt.s \$${1:f2},\$${2:f4}
+Comentario: if ($f2 &lt; $f4) cond=1; else cond=0
+
+
+Snippet   : float_compare_double.sublime-snippet
+CDATA     : c.lt.d \$${1:f2},\$${2:f4}
+Comentario: if ($f2 &lt; $f4) cond=1; else cond=0
+
+
+Snippet   : branch_on_float_true.sublime-snippet
+CDATA     : bc1t ${1:100}
+Comentario: if (cond == 1) go to PC+4+100
+
+
+Snippet   : branch_on_float_false.sublime-snippet
+CDATA     : bc1f ${1:100}
+Comentario: if (cond == 0) go to PC+4+100
+
+
+Snippet   : load_address.sublime-snippet
+CDATA     : la \$${1:rd},${2:LabelAddr}
+Comentario: lui $rd,LabelAddr[31:16]; ori $rd,$rd,LabelAddr[15:0]
+
+
+Snippet   : load_immediate.sublime-snippet
+CDATA     : li \$${1:rd},${2:IMMED}
+Comentario: lui $rd,IMMED[31:16]; ori $rd,$rd,IMMED[15:0]
+
+
+Snippet   : branch_unconditionally.sublime-snippet
+CDATA     : b ${1:Label}
+Comentario: beq $zero,$zero,Label
+
+
+Snippet   : branch_and_link.sublime-snippet
+CDATA     : bal ${1:Label}
+Comentario: bgezal $zero,Label
+
+
+Snippet   : branch_if_greater_than.sublime-snippet
+CDATA     : bgt \$${1:rs},\$${2:rt},${3:Label}
+Comentario: slt $at,$rt,$rs; bne $at,$zero,Label
+
+
+Snippet   : branch_if_less_than.sublime-snippet
+CDATA     : blt \$${1:rs},\$${2:rt},${3:Label}
+Comentario: slt $at,$rs,$rt; bne $at,$zero,Label
+
+
+Snippet   : branch_if_greater_than_or_equal.sublime-snippet
+CDATA     : bge \$${1:rs},\$${2:rt},${3:Label}
+Comentario: slt $at,$rs,$rt; beq $at,$zero,Label
+
+
+Snippet   : branch_if_less_than_or_equal.sublime-snippet
+CDATA     : ble \$${1:rs},\$${2:rt},${3:Label}
+Comentario: slt $at,$rt,$rs; beq $at,$zero,Label
+
+
+Snippet   : branch_if_greater_than_unsigned.sublime-snippet
+CDATA     : bgtu \$${1:rs},\$${2:rt},${3:Label}
+Comentario: sltu $at,$rt,$rs; bne $at,$zero,Label
+
+
+Snippet   : branch_if_greater_than_zero.sublime-snippet
+CDATA     : bgtz \$${1:rs},${2:Label}
+Comentario: slt $at,$zero,$rs; bne $at,$zero,Label
+
+
+Snippet   : branch_if_equal_to_zero.sublime-snippet
+CDATA     : beqz \$${1:rs},${2:Label}
+Comentario: beq $rs,$zero,Label
+
+
+Snippet   : multiply_.sublime-snippet
+CDATA     : mul \$${1:d},\$${2:s},\$${3:t}
+Comentario: mult $s,$t; mflo $d
+
+
+Snippet   : divides_and_returns_quotient.sublime-snippet
+CDATA     : div \$${1:d},\$${2:s},\$${3:t}
+Comentario: div $s,$t; mflo $d
+
+
+Snippet   : divides_and_returns_remainder.sublime-snippet
+CDATA     : rem \$${1:d},\$${2:s},\$${3:t}
+Comentario: div $s,$t; mfhi $d
+
+

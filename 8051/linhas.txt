@@ -1,0 +1,94 @@
+ACALL addr
+ADD A, #dado
+ADD A, @Ri
+ADD A, direto
+ADD A, Rn
+ADDC A, #dado
+ADDC A, @Ri
+ADDC A, direto
+ADDC A, Rn
+AJMP addr
+CJNE @Ri, #dado, rel
+CJNE A, #dado, rel
+CJNE A, direto, rel
+CJNE Rn, #dado, rel
+CLR A
+CLR bit
+CLR C
+CPL A
+CPL bit
+CPL C
+DA A
+DEC @Ri
+DEC A
+DEC direto
+DEC Rn
+DIV AB
+DJNZ direto, rel
+DJNZ Rn, rel
+INC @Ri
+INC A
+INC direto
+INC DPTR
+INC Rn
+JB bit, rel
+JBC bit, rel
+JC rel
+JMP @A+DPTR
+JNB bit, rel
+JNC rel
+JNZ rel
+JZ rel
+LCALL addr
+LJMP addr
+MOV @Ri, #dado
+MOV @Ri, A
+MOV @Ri, direto
+MOV A, #dado
+MOV A, @Ri
+MOV A, direto
+MOV A, Rn
+MOV bit, C
+MOV C, bit
+MOV direto, #dado
+MOV direto, @Ri
+MOV direto, A
+MOV direto, Rn
+MOV direto1, direto
+MOV DPTR, #dado16
+MOV Rn, #dado
+MOV Rn, A
+MOV Rn, direto
+MOVC A, @A+DPTR
+MOVC A, @A+PC
+MOVX @DPTR, A
+MOVX @Ri, A
+MOVX A, @DPTR
+MOVX A, @Ri
+MUL AB
+NOP
+POP direto
+PUSH direto
+RET
+RETI
+RL A
+RLC A
+RR A
+RRC A
+SETB bit
+SETB C
+SJMP rel
+SUBB A, #dado
+SUBB A, @Ri
+SUBB A, direto
+SUBB A, Rn
+SWAP A
+XCH A, @Ri
+XCH A, direto
+XCH A, Rn
+XCHD A, @Ri
+XRL A, #dado
+XRL A, @Ri
+XRL A, direto
+XRL A, Rn
+XRL direto, A

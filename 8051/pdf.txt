@@ -1,0 +1,226 @@
+ CONJUNTO DE INSTRUÇÕES
+
+Rn - Registrador R0 – R7 do banco de registradores selecionado.
+direto - 8-bits de endereço da posição da RAM de dados interna. Podem ser referentes tanto à RAM interna (0 –
+7F) como ao espaço SFR (80 - FF).
+@Ri - 8-bits da RAM interna de dados (00 - FF) endereçada indiretamente através de R0 ou R1 do banco de
+registradores selecionado.
+#dado - valor de 8-bits contida na instrução.
+#dado16 - valoro de 16-bits contida na instrução.
+addr16 - Endereço de destino em 16-bits. Usado pelas instruções LCALL e LJMP, podendo acessar toda a
+memória.
+addr11 - Endereço de destino em 11-bits. Usado pelas instruções ACALL e AJMP, podendo acessar 2Kb de
+distância da instrução usada.
+rel - Endereço relativo em 8-bits. Pode alcançar uma distância de -128 a +127 bytes de distância da instrução
+seguinte à instrução usada. Note que o valor negativo deve ser obtido por complemento de dois.
+bit - Endereço direto do bit. Pode acessar a RAM interna e o espaço SFR.
+Mnemônico Descrição Bytes Períodos
+de
+clock
+Operações Aritméticas
+ADD A, Rn Soma o conteúdo do registrador Rn ao ACC. 1 12
+ADD A, direto Soma o conteúdo da RAM interna do endereço "direto" ao ACC. 2 12
+ADD A, @Ri Soma o conteúdo da RAM apontada por Ri ao ACC. 1 12
+ADD A, #dado Soma o valor “dado” ao ACC. 2 12
+ADDC A, Rn Soma o conteúdo do registrador Rn ao ACC mais o carry. 1 12
+ADDC A, direto Soma o conteúdo da RAM interna do endereço "direto" ao ACC mais o
+carry.
+2 12
+ADDC A, @Ri Soma o conteúdo da RAM interna apontada por Ri ao ACC mais o
+carry.
+1 12
+ADDC A, #dado Soma o valor “dado” ao ACC mais o carry. 2 12
+SUBB A, Rn Subtrai o conteúdo do registrador Rn do ACC menos o carry. 1 12
+SUBB A, direto Subtrai do ACC o conteúdo da RAM interna do endereço "direto"
+menos o carry.
+2 12
+SUBB A, @Ri Subtrai do ACC o conteúdo da RAM interna apontada por Ri menos o
+carry.
+1 12
+SUBB A, #dado Subtrai do ACC o valor “dado” menos o carry. 2 12
+INC A Incrementa o ACC. 1 12
+INC Rn Incrementa o registrador Rn de uma unidade. 1 12
+INC direto Incrementa de uma unidade o conteúdo do endereço "direto" da RAM
+interna.
+2 12
+INC @Ri Incrementa de uma unidade o conteúdo da posição de memória da RAM
+interna apontada pelo registrador Ri.
+1 12
+DEC A Decrementa o ACC de uma unidade. 1 12
+DEC Rn Decrementa o registrador Rn de uma unidade. 1 12
+DEC direto Decrementa de uma unidade o conteúdo do endereço "direto" da RAM
+interna.
+2 12
+DEC @Ri Decrementa de uma unidade o conteúdo do endereço da RAM interna
+apontado por Ri.
+1 12
+INC DPTR Incrementa de uma unidade o registrador de 16 Bits DPTR. 1 24
+MUL AB Multiplica A por B. 1 48
+DIV AB Divide A por B. 1 48
+DA A Ajuste decimal do ACC. 1 12 Operações lógicas
+ANL A, Rn Lógica AND do registrador Rn com o ACC. 1 12
+ANL A, direto Lógica AND do conteúdo do endereço "direto" da RAM interna com o
+ACC.
+2 12
+ANL A, @Ri Lógica AND do conteúdo do endereço da RAM interna apontado por Ri
+com o ACC.
+1 12
+ANL A, #dado Lógica AND do valor “dado” com o ACC. 2 12
+ANL direto, A Lógica AND do ACC com o conteúdo do endereço "direto" da RAM
+interna.
+2 12
+ANL direto, #dado
+Lógica AND do valor “dado” com o conteúdo do endereço "direto" da
+RAM interna.
+3 24
+ORL A, Rn Lógica OR do registrador Rn com o ACC. 1 12
+ORL A, direto Lógica OR do conteúdo do endereço "direto" da RAM interna com o
+ACC.
+2 12
+ORL A, @Ri Lógica OR do conteúdo do endereço da RAM interna apontado por Ri
+com o ACC.
+1 12
+ORL A, #dado Lógica OR do valor “dado” com o ACC. 2 12
+ORL direto, A Lógica OR do ACC com o conteúdo do endereço "direto"da RAM
+interna.
+2 12
+ORL direto, #dado
+Lógica OR do valor “dado” com o conteúdo do endereço "direto" da
+RAM interna.
+3 24
+XRL A, Rn Lógica OU Exclusivo do registrador Rn com o ACC. 1 12
+XRL A, direto Lógica OU Exclusivo do conteúdo do endereço "direto" da RAM
+interna com o ACC.
+2 12
+XRL A, @Ri Lógica OU Exclusivo do conteúdo do endereço da RAM interna
+apontado por Ri com o ACC.
+2 12
+XRL A, #dado Lógica OR Exclusivo do valor “dado” com o ACC. 2 12
+XRL direto, A Lógica OU Exclusivo do ACC com o conteúdo do endereço "direto" da
+RAM interna.
+2 12
+XRL direto, #dado
+Lógica OU Exclusivo do valor “dado” com o conteúdo do endereço
+"direto" da RAM interna.
+3 24
+CLR A Zera o ACC. 1 12
+CPL A Complementa o ACC. 1 12
+RL A Rotaciona o ACC para a esquerda. 1 12
+RLC A Rotaciona o ACC para a esquerda com o carry. 1 12
+RR A Rotaciona o ACC para direita. 1 12
+RRC A Rotaciona o ACC para direita com o carry. 1 12
+SWAP A Troca os "nibbles" do ACC entre si 1 12 Transferência de dados
+MOV A, Rn Move o conteúdo do registrador para o ACC. 1 12
+MOV A, direto Move conteúdo do endereço "direto" da RAM interna para o ACC. 2 12
+MOV A, @Ri Move o conteúdo da posição de memória da RAM interna apontado por
+Ri para o ACC.
+1 12
+MOV A, #dado Move o valor “dado” para o ACC. 2 12
+MOV Rn, A Move o ACC para o registrador Rn. 1 12
+MOV Rn, direto Move conteúdo do endereço "direto" da RAM interna para o registrador
+Rn.
+2 24
+MOV Rn, #dado Move o valor “dado” para o registrador Rn. 2 12
+MOV direto, A Move ACC para o endereço "direto" da RAM interna. 2 12
+MOV direto, Rn Move o registrador Rn para o conteúdo do endereço "direto". 2 24
+MOV direto1, direto Move conteúdo do endereço "direto" da RAM interna para o conteúdo
+do endereço "direto1"
+3 24
+MOV direto, @Ri Move o conteúdo da posição de memória da RAM interna apontado por
+Ri para o endereço "direto" da RAM interna.
+2 24
+MOV direto, #dado Move o valor “dado” para o conteúdo do endereço "direto"da RAM
+interna.
+3 24
+MOV @Ri, A Move ACC para a posição de memória da RAM interna apontado por Ri. 1 12
+MOV @Ri, direto Move o conteúdo dado endereço "direto" da RAM interna para posição
+de memória da RAM interna apontada por Ri.
+2 24
+MOV @Ri, #dado Move o valor “dado” para a posição de memória da RAM interna
+apontada por Ri.
+2 12
+MOV DPTR, #dado16 Carrega o DPTR com um dado de 16 bits. 3 24
+MOVC A, @A+DPTR Move um byte da memória de Programa apontado por (A+DPTR) para o
+ACC.
+1 24
+MOVC A, @A+PC Move um byte da memória de Programa apontado por (A+PC) para o
+ACC.
+1 24
+MOVX A, @Ri Move o conteúdo da posição de memória da RAM externa apontada por
+Ri (endereço de 8-bits) para o ACC.
+1 24
+MOVX A, @DPTR Move o conteúdo da posição de memória da RAM externa apontado por
+DPTR (endereço de 16-bits) para o ACC.
+1 24
+MOVX @Ri, A Move o ACC para a posição de memória da RAM externa apontado por
+Ri (endereço de 8-bits).
+1 24
+MOVX @DPTR, A Move o ACC para a posição de memória da RAM externa apontado
+DPTR (endereço de 16-bits) .
+1 24
+PUSH direto Salva conteúdo do endereço "direto" da RAM interna na pilha na posição
+de memória apontada por SP.
+2 24
+POP direto Retira da pilha o conteúdo do endereço apontado por SP e coloca no
+endereço "direto".
+2 24
+XCH A, Rn Troca conteúdo do registrador Rn com o ACC. 1 12
+XCH A, direto Troca o conteúdo do endereço "direto" com o ACC. 2 12
+XCH A, @Ri Troca o conteúdo da RAM interna apontado por Ri com o ACC. 1 12
+XCHD A, @Ri Troca o "nibble" menos significativo do ACC com o nibble menos
+significativo do conteúdo do endereço apontado por Ri
+1 12
+Instruções boleanas
+CLR C Zera o carry. 1 12
+CLR bit Zera o bit especificado. 2 12
+SETB C Coloca o carry em nível lógico "1". 1 12
+SETB bit Coloca o bit especificado em nível lógico "1". 2 12
+CPL C Complementa o carry. 1 12
+CPL bit Complementa o bit especificado. 2 12
+ANL C, bit Lógica AND do bit especificado e o carry. 2 24
+ANL C, /bit Lógica AND do bit especificado complementado e o carry. 2 24
+ORL C, bit Lógica OR do bit especificado e o carry. 2 24
+ORL C, /bit Lógica OR do bit especificado complementado e o carry. 2 24
+MOV C, bit Move bit especificado para o carry. 2 12
+MOV bit, C Move carry para o bit especificado 2 24
+JC rel Salta para o endereço “rel” se o carry estiver em "1". 2 24
+JNC rel Salta para o endereço “rel” se o carry não estiver em "1". 2 24
+JB bit,rel Salta para o endereço “rel” se o bit especificado estiver em "1". 3 24
+JNB bit,rel Salta para o endereço “rel” se o bit especificado não estiver em "1". 3 24
+JBC bit, rel Salta para o endereço “rel” se o bit especificado estiver em "1" e zera o
+bit.
+3 24
+Instruções de desvio
+ACALL addr 11 Chamada de sub-rotina absoluta (até 2k). 2 24
+LCALL addr 16 Chamada de sub-rotina distante (até 64k). 3 24
+RET Retorno da sub-rotina. 1 24
+RETI Retorno da sub-rotina de uma interrupção. 1 24
+AJMP addr 11 Salto absoluto (até 2k). 2 24
+LJMP addr 16 Salto longo (até 64k). 3 24
+SJMP rel Salto curto (entre –128 e 127 bytes.). 2 24
+JMP @A+DPTR Salta para o endereço apontado por DPTR + ACC 1 24
+JZ rel Salta para o endereço “rel” se o resultado da operação no ACC for zero
+(Z=1).
+2 24
+JNZ rel Salta para o endereço “rel” se o resultado da operação no ACC não for
+zero (Z=0).
+2 24
+CJNE A, direto, rel. Compara o ACC e o conteúdo do endereço “direto” e salta para o
+endereço “rel” se não for igual.
+3 24
+CJNE A, #dado, rel. Compara o ACC e o “dado” e salta para o endereço “rel” se não for
+igual.
+3 24
+CJNE Rn, #dado, rel. Compara o “dado” com o registrador Rn e salta para o endereço “rel” se
+não for igual.
+3 24
+CJNE @Ri, #dado, rel. Compara o “dado” com o conteúdo da posição de memória da RAM
+interna apontado por Ri e salta para “rel” se não for igual.
+3 24
+DJNZ Rn, rel. Decrementa de uma unidade o registrador Rn e salta para “rel” se não
+for zero.
+2 24
+DJNZ direto, rel. Decrementa de uma unidade o conteúdo da posição de memória "direto”
+da RAM interna e salta para “rel” se não for zero.
+3 24
+NOP Nenhuma operação. 1 12

@@ -1,0 +1,181 @@
+@dest: C:\Users\Leonardo\AppData\Roaming\Sublime Text 3\Packages\LeoCodeIntel\Javascript snippets
+@scope: source.js
+
+
+
+
+// http://www.w3schools.com/jsref/jsref_obj_string.asp
+charAt(index)                                               // String
+charCodeAt(index)                                           // String
+concat(string1, string2)                                    // String
+fromCharCode(n1, n2)                                        // String
+indexOf(searchvalue, start)                                 // String
+lastIndexOf(searchvalue, start)                             // String
+localeCompare(compareString)                                // String
+match(regexp)                                               // String
+replace(searchvalue, newvalue)                              // String
+search(searchvalue)                                         // String
+slice(start, end)                                           // String
+split(separator, limit)                                     // String
+substr(start, length)                                       // String
+substring(start, end)                                       // String
+toLocaleLowerCase()                                         // String
+toLocaleUpperCase()                                         // String
+toLowerCase()                                               // String
+toUpperCase()                                               // String
+trim()                                                      // String
+
+
+
+
+
+
+
+
+
+// http://www.w3schools.com/jsref/jsref_obj_number.asp
+toFixed(x)                                                  // Number
+toExponential(x)                                            // Number
+toPrecision(x)                                              // Number
+
+
+
+
+
+// http://www.w3schools.com/jsref/jsref_obj_math.asp
+abs(x)                                                      // Math
+asin(x)                                                     // Math
+acos(x)                                                     // Math
+ceil(x)                                                     // Math
+cos(x)                                                      // Math
+atan(x)                                                     // Math
+floor(x)                                                    // Math
+log(x)                                                      // Math
+exp(x)                                                      // Math
+atan2(y, x)                                                 // Math
+min(n1, n2)                                                 // Math
+pow(x, y)                                                   // Math
+random()                                                    // Math
+round(x)                                                    // Math
+max(n1, n2)                                                 // Math
+sqrt(x)                                                     // Math
+sin(x)                                                      // Math
+tan(x)                                                      // Math
+
+
+
+
+// http://www.w3schools.com/jsref/jsref_obj_date.asp
+getDate()                                                   // Date
+getFullYear()                                               // Date
+getMilliseconds()                                           // Date
+getHours()                                                  // Date
+getDay()                                                    // Date
+getMinutes()                                                // Date
+getMonth()                                                  // Date
+getSeconds()                                                // Date
+getUTCDate()                                                // Date
+getTimezoneOffset()                                         // Date
+getUTCDay()                                                 // Date
+getTime()                                                   // Date
+getUTCFullYear()                                            // Date
+getUTCHours()                                               // Date
+getUTCSeconds()                                             // Date
+getUTCMonth()                                               // Date
+getUTCMinutes()                                             // Date
+parse(datestring)                                           // Date
+setDate(day)                                                // Date
+getUTCMilliseconds()                                        // Date
+setHours(hour, min, sec, millisec)                          // Date
+setMinutes(min, sec, millisec)                              // Date
+setSeconds(sec, millisec)                                   // Date
+setUTCDate(day)                                             // Date
+setTime(millisec)                                           // Date
+setFullYear(year, month, day)                               // Date
+setMonth(month, day)                                        // Date
+setMilliseconds(millisec)                                   // Date
+setUTCHours(hour, min, sec, millisec)                       // Date
+setUTCMilliseconds(millisec)                                // Date
+setUTCMinutes(min, sec, millisec)                           // Date
+setUTCFullYear(year, month, day)                            // Date
+setUTCMonth(month, day)                                     // Date
+setUTCSeconds(sec, millisec)                                // Date
+toDateString()                                              // Date
+toUTCString()                                               // Date
+toJSON()                                                    // Date
+toISOString()                                               // Date
+toLocaleDateString()                                        // Date
+toLocaleTimeString()                                        // Date
+toLocaleString()                                            // Date
+UTC(year, month, day, hours, minutes, seconds, millisec)    // Date
+toTimeString()                                              // Date
+
+
+
+
+
+
+
+
+
+
+
+
+
+// http://www.w3schools.com/jsref/jsref_obj_array.asp
+concat(array2, array3)                                      // Array
+indexOf(item, start)                                        // Array
+join(separator)                                             // Array
+pop()                                                       // Array
+reverse()                                                   // Array
+push(item1, item2)                                          // Array
+slice(start, end)                                           // Array
+splice(index, howmany, item)                                // Array
+sort(compareFunction)                                       // Array
+shift()                                                     // Array
+lastIndexOf(item, start)                                    // Array
+unshift(item1, item2)                                       // Array
+
+
+
+
+
+// http://www.w3schools.com/jsref/jsref_obj_global.asp
+decodeURI(uri)                                              // Global
+encodeURIComponent(uri)                                     // Global
+eval(string)                                                // Global
+escape(string)                                              // Global
+decodeURIComponent(uri)                                     // Global
+encodeURI(uri)                                              // Global
+isNaN(value)                                                // Global
+Number(object)                                              // Global
+parseInt(string, radix)                                     // Global
+parseFloat(string)                                          // Global
+String(object)                                              // Global
+isFinite(value)                                             // Global
+unescape(string)                                            // Global
+
+
+
+
+
+// http://www.w3schools.com/jsref/dom_obj_document.asp
+addEventListener(event, function, useCapture)               // Document
+createElement(nodename)                                     // Document
+getElementById(elementID)                                   // Document
+getElementsByClassName(classname)                           // Document
+getElementsByName(name)                                     // Document
+getElementsByTagName(tagname)                               // Document
+hasFocus()                                                  // Document
+importNode(node, deep)                                      // Document
+querySelector(CSS selectors)                                // Document
+querySelectorAll(CSS selectors)                             // Document
+removeEventListener(event, function, useCapture)            // Document
+renameNode(node, namespaceURI, nodename)                    // Document
+
+
+
+
+
+// Snippets na forma normal de leitura do Sublime
+foreach             forEach(function (${1:elem}, ${2:index}) {\n	${0}\n});             foreach

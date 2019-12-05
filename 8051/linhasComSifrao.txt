@@ -1,0 +1,94 @@
+ACALL ${1:addr}
+ADD A, #${1:dado}
+ADD A, ${1:direto}
+ADD A, ${1:Rn}
+ADD A, @${1:Ri}
+ADDC A, #${1:dado}
+ADDC A, ${1:direto}
+ADDC A, ${1:Rn}
+ADDC A, @${1:Ri}
+AJMP ${1:addr}
+CJNE ${1:Rn}, #${2:dado}, ${3:rel}
+CJNE @${1:Ri}, #${2:dado}, ${3:rel}
+CJNE A, #${1:dado}, ${2:rel}
+CJNE A, ${1:direto}, ${2:rel}
+CLR ${1:bit}
+CLR A
+CLR C
+CPL ${1:bit}
+CPL A
+CPL C
+DA A
+DEC ${1:direto}
+DEC ${1:Rn}
+DEC @${1:Ri}
+DEC A
+DIV AB
+DJNZ ${1:direto}, ${2:rel}
+DJNZ ${1:Rn}, ${2:rel}
+INC ${1:direto}
+INC ${1:Rn}
+INC @${1:Ri}
+INC A
+INC DPTR
+JB ${1:bit}, ${2:rel}
+JBC ${1:bit}, ${2:rel}
+JC ${1:rel}
+JMP @A+DPTR
+JNB ${1:bit}, ${2:rel}
+JNC ${1:rel}
+JNZ ${1:rel}
+JZ ${1:rel}
+LCALL ${1:addr}
+LJMP ${1:addr}
+MOV ${1:bit}, C
+MOV ${1:direto}, #${2:dado}
+MOV ${1:direto}, ${2:Rn}
+MOV ${1:direto}, @${2:Ri}
+MOV ${1:direto}, A
+MOV ${1:direto}1, ${2:direto}
+MOV ${1:Rn}, #${2:dado}
+MOV ${1:Rn}, ${2:direto}
+MOV ${1:Rn}, A
+MOV @${1:Ri}, #${2:dado}
+MOV @${1:Ri}, ${2:direto}
+MOV @${1:Ri}, A
+MOV A, #${1:dado}
+MOV A, ${1:direto}
+MOV A, ${1:Rn}
+MOV A, @${1:Ri}
+MOV C, ${1:bit}
+MOV DPTR, #${1:dado}16
+MOVC A, @A+DPTR
+MOVC A, @A+PC
+MOVX @${1:Ri}, A
+MOVX @DPTR, A
+MOVX A, @${1:Ri}
+MOVX A, @DPTR
+MUL AB
+NOP
+POP ${1:direto}
+PUSH ${1:direto}
+RET
+RETI
+RL A
+RLC A
+RR A
+RRC A
+SETB ${1:bit}
+SETB C
+SJMP ${1:rel}
+SUBB A, #${1:dado}
+SUBB A, ${1:direto}
+SUBB A, ${1:Rn}
+SUBB A, @${1:Ri}
+SWAP A
+XCH A, ${1:direto}
+XCH A, ${1:Rn}
+XCH A, @${1:Ri}
+XCHD A, @${1:Ri}
+XRL ${1:direto}, A
+XRL A, #${1:dado}
+XRL A, ${1:direto}
+XRL A, ${1:Rn}
+XRL A, @${1:Ri}

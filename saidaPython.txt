@@ -1,0 +1,220 @@
+CDATA: "abs(${0:x})"
+Snippet: abs.sublime-snippet
+
+
+CDATA: "all(${0:iterable})"
+Snippet: all.sublime-snippet
+
+
+CDATA: "any(${0:iterable})"
+Snippet: any.sublime-snippet
+
+
+CDATA: "ascii(${0:object})"
+Snippet: ascii.sublime-snippet
+
+
+CDATA: "bin(${0:x})"
+Snippet: bin.sublime-snippet
+
+
+CDATA: "callable(${0:object})"
+Snippet: callable.sublime-snippet
+
+
+CDATA: "chr(${0:i})"
+Snippet: chr.sublime-snippet
+
+
+CDATA: "compile(${0:source}, ${1:filename}, ${2:mode})"
+Snippet: compile.sublime-snippet
+
+
+CDATA: "delattr(${0:object}, ${1:name})"
+Snippet: delattr.sublime-snippet
+
+
+CDATA: "dir()"
+Snippet: dir.sublime-snippet
+
+
+CDATA: "divmod(${0:a}, ${1:b})"
+Snippet: divmod.sublime-snippet
+
+
+CDATA: "enumerate(${0:iterable})"
+Snippet: enumerate.sublime-snippet
+
+
+CDATA: "eval(${0:expression})"
+Snippet: eval.sublime-snippet
+
+
+CDATA: "exec(${0:object})"
+Snippet: exec.sublime-snippet
+
+
+CDATA: "filter(${0:function}, ${1:iterable})"
+Snippet: filter.sublime-snippet
+
+
+CDATA: "format(${0:value})"
+Snippet: format.sublime-snippet
+
+
+CDATA: "getattr(${0:object}, ${1:name})"
+Snippet: getattr.sublime-snippet
+
+
+CDATA: "globals()"
+Snippet: globals.sublime-snippet
+
+
+CDATA: "hasattr(${0:object}, ${1:name})"
+Snippet: hasattr.sublime-snippet
+
+
+CDATA: "hash(${0:object})"
+Snippet: hash.sublime-snippet
+
+
+CDATA: "help()"
+Snippet: help.sublime-snippet
+
+
+CDATA: "hex(${0:x})"
+Snippet: hex.sublime-snippet
+
+
+CDATA: "id(${0:object})"
+Snippet: id.sublime-snippet
+
+
+CDATA: "input()"
+Snippet: input.sublime-snippet
+
+
+CDATA: "isinstance(${0:object}, ${1:classinfo})"
+Snippet: isinstance.sublime-snippet
+
+
+CDATA: "issubclass(${0:class}, ${1:classinfo})"
+Snippet: issubclass.sublime-snippet
+
+
+CDATA: "iter(${0:object})"
+Snippet: iter.sublime-snippet
+
+
+CDATA: "len(${0:s})"
+Snippet: len.sublime-snippet
+
+
+CDATA: "locals()"
+Snippet: locals.sublime-snippet
+
+
+CDATA: "map(${0:function}, ${1:iterable}, ${2:...})"
+Snippet: map.sublime-snippet
+
+
+CDATA: "max(${0:iterable})"
+Snippet: max.sublime-snippet
+
+
+CDATA: "max(${0:arg1}, ${1:arg2}, ${2:*args})"
+Snippet: max.sublime-snippet
+
+
+CDATA: "memoryview(${0:obj})"
+Snippet: memoryview.sublime-snippet
+
+
+CDATA: "min(${0:iterable})"
+Snippet: min.sublime-snippet
+
+
+CDATA: "min(${0:arg1}, ${1:arg2}, ${2:*args})"
+Snippet: min.sublime-snippet
+
+
+CDATA: "next(${0:iterator})"
+Snippet: next.sublime-snippet
+
+
+CDATA: "oct(${0:x})"
+Snippet: oct.sublime-snippet
+
+
+CDATA: "open(${0:file})"
+Snippet: open.sublime-snippet
+
+
+CDATA: "ord(${0:c})"
+Snippet: ord.sublime-snippet
+
+
+CDATA: "pow(${0:x}, ${1:y})"
+Snippet: pow.sublime-snippet
+
+
+CDATA: "print(${0:*objects})"
+Snippet: print.sublime-snippet
+
+
+CDATA: "range(${0:stop})"
+Snippet: range.sublime-snippet
+
+
+CDATA: "range(${0:start}, ${1:stop})"
+Snippet: range.sublime-snippet
+
+
+CDATA: "repr(${0:object})"
+Snippet: repr.sublime-snippet
+
+
+CDATA: "reversed(${0:seq})"
+Snippet: reversed.sublime-snippet
+
+
+CDATA: "round(${0:number})"
+Snippet: round.sublime-snippet
+
+
+CDATA: "setattr(${0:object}, ${1:name}, ${2:value})"
+Snippet: setattr.sublime-snippet
+
+
+CDATA: "sorted(${0:iterable})"
+Snippet: sorted.sublime-snippet
+
+
+CDATA: "staticmethod(${0:function})"
+Snippet: staticmethod.sublime-snippet
+
+
+CDATA: "sum(${0:iterable})"
+Snippet: sum.sublime-snippet
+
+
+CDATA: "super()"
+Snippet: super.sublime-snippet
+
+
+CDATA: "tuple()"
+Snippet: tuple.sublime-snippet
+
+
+CDATA: "vars()"
+Snippet: vars.sublime-snippet
+
+
+CDATA: "zip(${0:*iterables})"
+Snippet: zip.sublime-snippet
+
+
+CDATA: "__import__()"
+Snippet: __import__.sublime-snippet
+
+

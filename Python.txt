@@ -1,0 +1,69 @@
+@dest: C:\Users\Leonardo\AppData\Roaming\Sublime Text 3\Packages\LeoCodeIntel\Python snippets
+@scope: source.python
+
+
+
+
+// https://docs.python.org/3/library/functions.html#reversed
+__import__(name) // globals=None, locals=None, fromlist=(), level=0
+abs(x)
+all(iterable)
+any(iterable)
+ascii(object)
+bin(x)
+callable(object)
+chr(i)
+compile(source, filename, mode) // flags=0, dont_inherit=False, optimize=-1
+delattr(object, name)
+dir(x)
+divmod(a, b)
+enumerate(iterable) // start=0
+eval(expression) // globals=None, locals=None
+exec(object)
+exit                   sys.exit(0)              exit
+filter(function, iterable)
+float(x)
+format(value)
+getattr(object, name)
+globals()
+hasattr(object, name)
+hash(object)
+help(x)
+hex(x)
+id(object)
+input()
+int(x)
+isinstance(object, classinfo)
+issubclass(class, classinfo)
+iter(object)
+len(s)
+list(x)
+map(function, iterable, ...)
+max(arg1, arg2, *args)
+max(iterable)
+memoryview(obj)
+min(arg1, arg2, *args)
+min(iterable)
+next(iterator)
+oct(x)
+open(file) // mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None
+ord(c)
+pow(x, y)
+range(start, stop)
+range(stop)
+repr(object)
+reversed(seq)
+round(number)
+set(x)
+setattr(object, name, value)
+sorted(iterable)
+staticmethod(function)
+str(x)
+sum(iterable)
+super()
+tuple(x)
+zip(*iterables)
+write(str)
+read()
+readlines()
+Path(path)

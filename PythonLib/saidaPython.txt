@@ -1,0 +1,1984 @@
+name: os.name
+name: os.environ
+name: os.environb
+name: os.PRIO_PROCESS
+name: os.PRIO_PGRP
+name: os.PRIO_USER
+name: os.supports_bytes_environ
+name: os.F_LOCK
+name: os.F_TLOCK
+name: os.F_ULOCK
+name: os.F_TEST
+name: os.SEEK_SET
+name: os.SEEK_CUR
+name: os.SEEK_END
+name: os.O_RDONLY
+name: os.O_WRONLY
+name: os.O_RDWR
+name: os.O_APPEND
+name: os.O_CREAT
+name: os.O_EXCL
+name: os.O_TRUNC
+name: os.O_DSYNC
+name: os.O_RSYNC
+name: os.O_SYNC
+name: os.O_NDELAY
+name: os.O_NONBLOCK
+name: os.O_NOCTTY
+name: os.O_CLOEXEC
+name: os.O_BINARY
+name: os.O_NOINHERIT
+name: os.O_SHORT_LIVED
+name: os.O_TEMPORARY
+name: os.O_RANDOM
+name: os.O_SEQUENTIAL
+name: os.O_TEXT
+name: os.O_ASYNC
+name: os.O_DIRECT
+name: os.O_DIRECTORY
+name: os.O_NOFOLLOW
+name: os.O_NOATIME
+name: os.O_PATH
+name: os.O_TMPFILE
+name: os.O_SHLOCK
+name: os.O_EXLOCK
+name: os.POSIX_FADV_NORMAL
+name: os.POSIX_FADV_SEQUENTIAL
+name: os.POSIX_FADV_RANDOM
+name: os.POSIX_FADV_NOREUSE
+name: os.POSIX_FADV_WILLNEED
+name: os.POSIX_FADV_DONTNEED
+name: os.SF_NODISKIO
+name: os.SF_MNOWAIT
+name: os.SF_SYNC
+name: os.F_OK
+name: os.R_OK
+name: os.W_OK
+name: os.X_OK
+name: os.pathconf_names
+name: os.supports_dir_fd
+name: os.supports_effective_ids
+name: os.supports_fd
+name: os.supports_follow_symlinks
+name: os.XATTR_SIZE_MAX
+name: os.XATTR_CREATE
+name: os.XATTR_REPLACE
+name: os.EX_OK
+name: os.EX_USAGE
+name: os.EX_DATAERR
+name: os.EX_NOINPUT
+name: os.EX_NOUSER
+name: os.EX_NOHOST
+name: os.EX_UNAVAILABLE
+name: os.EX_SOFTWARE
+name: os.EX_OSERR
+name: os.EX_OSFILE
+name: os.EX_CANTCREAT
+name: os.EX_IOERR
+name: os.EX_TEMPFAIL
+name: os.EX_PROTOCOL
+name: os.EX_NOPERM
+name: os.EX_CONFIG
+name: os.EX_NOTFOUND
+name: os.P_NOWAIT
+name: os.P_NOWAITO
+name: os.P_WAIT
+name: os.P_DETACH
+name: os.P_OVERLAY
+name: os.P_PID
+name: os.P_PGID
+name: os.P_ALL
+name: os.WEXITED
+name: os.WSTOPPED
+name: os.WNOWAIT
+name: os.CLD_EXITED
+name: os.CLD_DUMPED
+name: os.CLD_TRAPPED
+name: os.CLD_CONTINUED
+name: os.WNOHANG
+name: os.WCONTINUED
+name: os.WUNTRACED
+name: os.SCHED_OTHER
+name: os.SCHED_BATCH
+name: os.SCHED_IDLE
+name: os.SCHED_SPORADIC
+name: os.SCHED_FIFO
+name: os.SCHED_RR
+name: os.SCHED_RESET_ON_FORK
+name: os.confstr_names
+name: os.sysconf_names
+name: os.curdir
+name: os.pardir
+name: os.sep
+name: os.altsep
+name: os.extsep
+name: os.pathsep
+name: os.defpath
+name: os.linesep
+name: os.devnull
+name: os.RTLD_LAZY
+name: os.RTLD_NOW
+name: os.RTLD_GLOBAL
+name: os.RTLD_LOCAL
+name: os.RTLD_NODELETE
+name: os.RTLD_NOLOAD
+name: os.RTLD_DEEPBIND
+fn: os.ctermid()
+fn: os.chdir(path)
+fn: os.fchdir(fd)
+fn: os.getcwd()
+fn: os.fsencode(filename)
+fn: os.fsdecode(filename)
+fn: os.getenv(key, default=None)
+fn: os.getenvb(key, default=None)
+fn: os.get_exec_path(env=None)
+fn: os.getegid()
+fn: os.geteuid()
+fn: os.getgid()
+fn: os.getgrouplist(user, group)
+fn: os.getgroups()
+fn: os.getlogin()
+fn: os.getpgid(pid)
+fn: os.getpgrp()
+fn: os.getpid()
+fn: os.getppid()
+fn: os.getpriority(which, who)
+fn: os.getresuid()
+fn: os.getresgid()
+fn: os.getuid()
+fn: os.initgroups(username, gid)
+fn: os.putenv(key, value)
+fn: os.setegid(egid)
+fn: os.seteuid(euid)
+fn: os.setgid(gid)
+fn: os.setgroups(groups)
+fn: os.setpgrp()
+fn: os.setpgid(pid, pgrp)
+fn: os.setpriority(which, who, priority)
+fn: os.setregid(rgid, egid)
+fn: os.setresgid(rgid, egid, sgid)
+fn: os.setresuid(ruid, euid, suid)
+fn: os.setreuid(ruid, euid)
+fn: os.getsid(pid)
+fn: os.setsid()
+fn: os.setuid(uid)
+fn: os.strerror(code)
+fn: os.umask(mask)
+fn: os.uname()
+fn: os.unsetenv(key)
+fn: os.fdopen(fd, *args, **kwargs)
+fn: os.close(fd)
+fn: os.closerange(fd_low, fd_high)
+fn: os.device_encoding(fd)
+fn: os.dup(fd)
+fn: os.dup2(fd, fd2, inheritable=True)
+fn: os.fchmod(fd, mode)
+fn: os.fchown(fd, uid, gid)
+fn: os.fdatasync(fd)
+fn: os.fpathconf(fd, name)
+fn: os.fstat(fd)
+fn: os.fstatvfs(fd)
+fn: os.fsync(fd)
+fn: os.ftruncate(fd, length)
+fn: os.get_blocking(fd)
+fn: os.isatty(fd)
+fn: os.lockf(fd, cmd, len)
+fn: os.lseek(fd, pos, how)
+fn: os.open(path, flags, mode=0o777, *, dir_fd=None)
+fn: os.openpty()
+fn: os.pipe()
+fn: os.pipe2(flags)
+fn: os.posix_fallocate(fd, offset, len)
+fn: os.posix_fadvise(fd, offset, len, advice)
+fn: os.pread(fd, buffersize, offset)
+fn: os.pwrite(fd, str, offset)
+fn: os.read(fd, n)
+fn: os.sendfile(out, in, offset, count)
+fn: os.set_blocking(fd, blocking)
+fn: os.readv(fd, buffers)
+fn: os.tcgetpgrp(fd)
+fn: os.tcsetpgrp(fd, pg)
+fn: os.ttyname(fd)
+fn: os.write(fd, str)
+fn: os.writev(fd, buffers)
+fn: os.get_terminal_size(fd=STDOUT_FILENO)
+fn: os.get_inheritable(fd)
+fn: os.set_inheritable(fd, inheritable)
+fn: os.get_handle_inheritable(handle)
+fn: os.set_handle_inheritable(handle, inheritable)
+fn: os.access(path, mode, *, dir_fd=None, effective_ids=False, follow_symlinks=True)
+fn: os.chdir(path)
+fn: os.chflags(path, flags, *, follow_symlinks=True)
+fn: os.chmod(path, mode, *, dir_fd=None, follow_symlinks=True)
+fn: os.chown(path, uid, gid, *, dir_fd=None, follow_symlinks=True)
+fn: os.chroot(path)
+fn: os.fchdir(fd)
+fn: os.getcwd()
+fn: os.getcwdb()
+fn: os.lchflags(path, flags)
+fn: os.lchmod(path, mode)
+fn: os.lchown(path, uid, gid)
+fn: os.link(src, dst, *, src_dir_fd=None, dst_dir_fd=None, follow_symlinks=True)
+fn: os.listdir(path='.')
+fn: os.lstat(path, *, dir_fd=None)
+fn: os.mkdir(path, mode=0o777, *, dir_fd=None)
+fn: os.makedirs(name, mode=0o777, exist_ok=False)
+fn: os.mkfifo(path, mode=0o666, *, dir_fd=None)
+fn: os.mknod(path, mode=0o600, device=0, *, dir_fd=None)
+fn: os.major(device)
+fn: os.minor(device)
+fn: os.makedev(major, minor)
+fn: os.pathconf(path, name)
+fn: os.readlink(path, *, dir_fd=None)
+fn: os.remove(path, *, dir_fd=None)
+fn: os.removedirs(name)
+fn: os.rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None)
+fn: os.renames(old, new)
+fn: os.replace(src, dst, *, src_dir_fd=None, dst_dir_fd=None)
+fn: os.rmdir(path, *, dir_fd=None)
+fn: os.scandir(path='.')
+fn: os.stat(path, *, dir_fd=None, follow_symlinks=True)
+fn: os.stat_float_times([ newvalue ])
+fn: os.statvfs(path)
+fn: os.symlink(src, dst, target_is_directory=False, *, dir_fd=None)
+fn: os.sync()
+fn: os.truncate(path, length)
+fn: os.unlink(path, *, dir_fd=None)
+fn: os.utime(path, times=None, *, [ ns, ] dir_fd=None, follow_symlinks=True)
+fn: os.walk(top, topdown=True, onerror=None, followlinks=False)
+fn: os.fwalk(top='.', topdown=True, onerror=None, *, follow_symlinks=False, dir_fd=None)
+fn: os.getxattr(path, attribute, *, follow_symlinks=True)
+fn: os.listxattr(path=None, *, follow_symlinks=True)
+fn: os.removexattr(path, attribute, *, follow_symlinks=True)
+fn: os.setxattr(path, attribute, value, flags=0, *, follow_symlinks=True)
+fn: os.abort()
+fn: os.execl(path, arg0, arg1, ...)
+fn: os._exit(n)
+fn: os.fork()
+fn: os.forkpty()
+fn: os.kill(pid, sig)
+fn: os.killpg(pgid, sig)
+fn: os.nice(increment)
+fn: os.plock(op)
+fn: os.popen(cmd, mode='r', buffering=-1)
+fn: os.spawnl(mode, path, ...)
+fn: os.startfile(path [, operation ])
+fn: os.system(command)
+fn: os.times()
+fn: os.wait()
+fn: os.waitid(idtype, id, options)
+fn: os.waitpid(pid, options)
+fn: os.wait3(options)
+fn: os.wait4(pid, options)
+fn: os.WCOREDUMP(status)
+fn: os.WIFCONTINUED(status)
+fn: os.WIFSTOPPED(status)
+fn: os.WIFSIGNALED(status)
+fn: os.WIFEXITED(status)
+fn: os.WEXITSTATUS(status)
+fn: os.WSTOPSIG(status)
+fn: os.WTERMSIG(status)
+fn: os.sched_get_priority_min(policy)
+fn: os.sched_get_priority_max(policy)
+fn: os.sched_setscheduler(pid, policy, param)
+fn: os.sched_getscheduler(pid)
+fn: os.sched_setparam(pid, param)
+fn: os.sched_getparam(pid)
+fn: os.sched_rr_get_interval(pid)
+fn: os.sched_yield()
+fn: os.sched_setaffinity(pid, mask)
+fn: os.sched_getaffinity(pid)
+fn: os.confstr(name)
+fn: os.cpu_count()
+fn: os.getloadavg()
+fn: os.sysconf(name)
+fn: os.urandom(n)
+name: os.path.supports_unicode_filenames
+fn: os.path.abspath(path)
+fn: os.path.basename(path)
+fn: os.path.commonpath(paths)
+fn: os.path.commonprefix(list)
+fn: os.path.dirname(path)
+fn: os.path.exists(path)
+fn: os.path.lexists(path)
+fn: os.path.expanduser(path)
+fn: os.path.expandvars(path)
+fn: os.path.getatime(path)
+fn: os.path.getmtime(path)
+fn: os.path.getctime(path)
+fn: os.path.getsize(path)
+fn: os.path.isabs(path)
+fn: os.path.isfile(path)
+fn: os.path.isdir(path)
+fn: os.path.islink(path)
+fn: os.path.ismount(path)
+fn: os.path.join(path, *paths)
+fn: os.path.normcase(path)
+fn: os.path.normpath(path)
+fn: os.path.realpath(path)
+fn: os.path.relpath(path, start=os.curdir)
+fn: os.path.samefile(path1, path2)
+fn: os.path.sameopenfile(fp1, fp2)
+fn: os.path.samestat(stat1, stat2)
+fn: os.path.split(path)
+fn: os.path.splitdrive(path)
+fn: os.path.splitext(path)
+fn: os.path.splitunc(path)
+name: re.A
+name: re.ASCII
+name: re.DEBUG
+name: re.I
+name: re.IGNORECASE
+name: re.L
+name: re.LOCALE
+name: re.M
+name: re.MULTILINE
+name: re.S
+name: re.DOTALL
+name: re.X
+name: re.VERBOSE
+fn: re.compile(pattern, flags=0)
+fn: re.search(pattern, string, flags=0)
+fn: re.match(pattern, string, flags=0)
+fn: re.fullmatch(pattern, string, flags=0)
+fn: re.split(pattern, string, maxsplit=0, flags=0)
+fn: re.findall(pattern, string, flags=0)
+fn: re.finditer(pattern, string, flags=0)
+fn: re.sub(pattern, repl, string, count=0, flags=0)
+fn: re.subn(pattern, repl, string, count=0, flags=0)
+fn: re.escape(string)
+fn: re.purge()
+name: math.pi
+name: math.e
+name: math.tau
+name: math.inf
+name: math.nan
+fn: math.ceil(x)
+fn: math.copysign(x, y)
+fn: math.fabs(x)
+fn: math.factorial(x)
+fn: math.floor(x)
+fn: math.fmod(x, y)
+fn: math.frexp(x)
+fn: math.fsum(iterable)
+fn: math.gcd(a, b)
+fn: math.isclose(a, b, *, rel_tol=1e-09, abs_tol=0.0)
+fn: math.isfinite(x)
+fn: math.isinf(x)
+fn: math.isnan(x)
+fn: math.ldexp(x, i)
+fn: math.modf(x)
+fn: math.trunc(x)
+fn: math.exp(x)
+fn: math.expm1(x)
+fn: math.log(x [, base ])
+fn: math.log1p(x)
+fn: math.log2(x)
+fn: math.log10(x)
+fn: math.pow(x, y)
+fn: math.sqrt(x)
+fn: math.acos(x)
+fn: math.asin(x)
+fn: math.atan(x)
+fn: math.atan2(y, x)
+fn: math.cos(x)
+fn: math.hypot(x, y)
+fn: math.sin(x)
+fn: math.tan(x)
+fn: math.degrees(x)
+fn: math.radians(x)
+fn: math.acosh(x)
+fn: math.asinh(x)
+fn: math.atanh(x)
+fn: math.cosh(x)
+fn: math.sinh(x)
+fn: math.tanh(x)
+fn: math.erf(x)
+fn: math.erfc(x)
+fn: math.gamma(x)
+fn: math.lgamma(x)
+Snippet   : __import__.sublime-snippet
+CDATA     : __import__()
+Comentario: globals=None, locals=None, fromlist=(), level=0
+
+
+Snippet   : abs.sublime-snippet
+CDATA     : abs(${1:x})
+Comentario: abs
+
+
+Snippet   : all.sublime-snippet
+CDATA     : all(${1:iterable})
+Comentario: all
+
+
+Snippet   : any.sublime-snippet
+CDATA     : any(${1:iterable})
+Comentario: any
+
+
+Snippet   : ascii.sublime-snippet
+CDATA     : ascii(${1:object})
+Comentario: ascii
+
+
+Snippet   : bin.sublime-snippet
+CDATA     : bin(${1:x})
+Comentario: bin
+
+
+Snippet   : callable.sublime-snippet
+CDATA     : callable(${1:object})
+Comentario: callable
+
+
+Snippet   : chr.sublime-snippet
+CDATA     : chr(${1:i})
+Comentario: chr
+
+
+Snippet   : compile.sublime-snippet
+CDATA     : compile(${1:source}, ${2:filename}, ${3:mode})
+Comentario: flags=0, dont_inherit=False, optimize=-1
+
+
+Snippet   : delattr.sublime-snippet
+CDATA     : delattr(${1:object}, ${2:name})
+Comentario: delattr
+
+
+Snippet   : dir.sublime-snippet
+CDATA     : dir(${1:x})
+Comentario: dir
+
+
+Snippet   : divmod.sublime-snippet
+CDATA     : divmod(${1:a}, ${2:b})
+Comentario: divmod
+
+
+Snippet   : enumerate.sublime-snippet
+CDATA     : enumerate(${1:iterable})
+Comentario: start=0
+
+
+Snippet   : eval.sublime-snippet
+CDATA     : eval(${1:expression})
+Comentario: globals=None, locals=None
+
+
+Snippet   : exec.sublime-snippet
+CDATA     : exec(${1:object})
+Comentario: exec
+
+
+Snippet   : exit.sublime-snippet
+CDATA     : sys.exit(0)
+Comentario: exit
+
+
+Snippet   : filter.sublime-snippet
+CDATA     : filter(${1:function}, ${2:iterable})
+Comentario: filter
+
+
+Snippet   : float.sublime-snippet
+CDATA     : float(${1:x})
+Comentario: float
+
+
+Snippet   : format.sublime-snippet
+CDATA     : format(${1:value})
+Comentario: format
+
+
+Snippet   : getattr.sublime-snippet
+CDATA     : getattr(${1:object}, ${2:name})
+Comentario: getattr
+
+
+Snippet   : globals.sublime-snippet
+CDATA     : globals()
+Comentario: globals
+
+
+Snippet   : hasattr.sublime-snippet
+CDATA     : hasattr(${1:object}, ${2:name})
+Comentario: hasattr
+
+
+Snippet   : hash.sublime-snippet
+CDATA     : hash(${1:object})
+Comentario: hash
+
+
+Snippet   : help.sublime-snippet
+CDATA     : help(${1:x})
+Comentario: help
+
+
+Snippet   : hex.sublime-snippet
+CDATA     : hex(${1:x})
+Comentario: hex
+
+
+Snippet   : id.sublime-snippet
+CDATA     : id(${1:object})
+Comentario: id
+
+
+Snippet   : input.sublime-snippet
+CDATA     : input()
+Comentario: input
+
+
+Snippet   : int.sublime-snippet
+CDATA     : int(${1:x})
+Comentario: int
+
+
+Snippet   : isinstance.sublime-snippet
+CDATA     : isinstance(${1:object}, ${2:classinfo})
+Comentario: isinstance
+
+
+Snippet   : issubclass.sublime-snippet
+CDATA     : issubclass(${1:class}, ${2:classinfo})
+Comentario: issubclass
+
+
+Snippet   : iter.sublime-snippet
+CDATA     : iter(${1:object})
+Comentario: iter
+
+
+Snippet   : len.sublime-snippet
+CDATA     : len(${1:s})
+Comentario: len
+
+
+Snippet   : list.sublime-snippet
+CDATA     : list(${1:x})
+Comentario: list
+
+
+Snippet   : map.sublime-snippet
+CDATA     : map(${1:function}, ${2:iterable}, ${3:...})
+Comentario: map
+
+
+Snippet   : max.sublime-snippet
+CDATA     : max(${1:arg1}, ${2:arg2}, ${3:*args})
+Comentario: max
+
+
+Snippet   : max.sublime-snippet
+CDATA     : max(${1:iterable})
+Comentario: max
+
+
+Snippet   : memoryview.sublime-snippet
+CDATA     : memoryview(${1:obj})
+Comentario: memoryview
+
+
+Snippet   : min.sublime-snippet
+CDATA     : min(${1:arg1}, ${2:arg2}, ${3:*args})
+Comentario: min
+
+
+Snippet   : min.sublime-snippet
+CDATA     : min(${1:iterable})
+Comentario: min
+
+
+Snippet   : next.sublime-snippet
+CDATA     : next(${1:iterator})
+Comentario: next
+
+
+Snippet   : oct.sublime-snippet
+CDATA     : oct(${1:x})
+Comentario: oct
+
+
+Snippet   : open.sublime-snippet
+CDATA     : open(${1:file})
+Comentario: mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None
+
+
+Snippet   : ord.sublime-snippet
+CDATA     : ord(${1:c})
+Comentario: ord
+
+
+Snippet   : pow.sublime-snippet
+CDATA     : pow(${1:x}, ${2:y})
+Comentario: pow
+
+
+Snippet   : range.sublime-snippet
+CDATA     : range(${1:start}, ${2:stop})
+Comentario: range
+
+
+Snippet   : range.sublime-snippet
+CDATA     : range(${1:stop})
+Comentario: range
+
+
+Snippet   : repr.sublime-snippet
+CDATA     : repr(${1:object})
+Comentario: repr
+
+
+Snippet   : reversed.sublime-snippet
+CDATA     : reversed(${1:seq})
+Comentario: reversed
+
+
+Snippet   : round.sublime-snippet
+CDATA     : round(${1:number})
+Comentario: round
+
+
+Snippet   : set.sublime-snippet
+CDATA     : set(${1:x})
+Comentario: set
+
+
+Snippet   : setattr.sublime-snippet
+CDATA     : setattr(${1:object}, ${2:name}, ${3:value})
+Comentario: setattr
+
+
+Snippet   : sorted.sublime-snippet
+CDATA     : sorted(${1:iterable})
+Comentario: sorted
+
+
+Snippet   : staticmethod.sublime-snippet
+CDATA     : staticmethod(${1:function})
+Comentario: staticmethod
+
+
+Snippet   : str.sublime-snippet
+CDATA     : str(${1:x})
+Comentario: str
+
+
+Snippet   : sum.sublime-snippet
+CDATA     : sum(${1:iterable})
+Comentario: sum
+
+
+Snippet   : super.sublime-snippet
+CDATA     : super()
+Comentario: super
+
+
+Snippet   : tuple.sublime-snippet
+CDATA     : tuple(${1:x})
+Comentario: tuple
+
+
+Snippet   : zip.sublime-snippet
+CDATA     : zip(${1:*iterables})
+Comentario: zip
+
+
+Snippet   : write.sublime-snippet
+CDATA     : write(${1:str})
+Comentario: write
+
+
+Snippet   : read.sublime-snippet
+CDATA     : read()
+Comentario: read
+
+
+Snippet   : readlines.sublime-snippet
+CDATA     : readlines()
+Comentario: readlines
+
+
+Snippet   : Path.sublime-snippet
+CDATA     : Path(${1:path})
+Comentario: Path
+
+
+Snippet   : os.ctermid.sublime-snippet
+CDATA     : os.ctermid()
+Comentario: os.ctermid
+
+
+Snippet   : os.chdir.sublime-snippet
+CDATA     : os.chdir(${1:path})
+Comentario: os.chdir
+
+
+Snippet   : os.fchdir.sublime-snippet
+CDATA     : os.fchdir(${1:fd})
+Comentario: os.fchdir
+
+
+Snippet   : os.getcwd.sublime-snippet
+CDATA     : os.getcwd()
+Comentario: os.getcwd
+
+
+Snippet   : os.fsencode.sublime-snippet
+CDATA     : os.fsencode(${1:filename})
+Comentario: os.fsencode
+
+
+Snippet   : os.fsdecode.sublime-snippet
+CDATA     : os.fsdecode(${1:filename})
+Comentario: os.fsdecode
+
+
+Snippet   : os.getenv.sublime-snippet
+CDATA     : os.getenv(${1:key}${2:, ${3:default=${4:None}}})
+Comentario: os.getenv
+
+
+Snippet   : os.getenvb.sublime-snippet
+CDATA     : os.getenvb(${1:key}${2:, ${3:default=${4:None}}})
+Comentario: os.getenvb
+
+
+Snippet   : os.get_exec_path.sublime-snippet
+CDATA     : os.get_exec_path(${1:${2:env=${3:None}}})
+Comentario: os.get_exec_path
+
+
+Snippet   : os.getegid.sublime-snippet
+CDATA     : os.getegid()
+Comentario: os.getegid
+
+
+Snippet   : os.geteuid.sublime-snippet
+CDATA     : os.geteuid()
+Comentario: os.geteuid
+
+
+Snippet   : os.getgid.sublime-snippet
+CDATA     : os.getgid()
+Comentario: os.getgid
+
+
+Snippet   : os.getgrouplist.sublime-snippet
+CDATA     : os.getgrouplist(${1:user}, ${2:group})
+Comentario: os.getgrouplist
+
+
+Snippet   : os.getgroups.sublime-snippet
+CDATA     : os.getgroups()
+Comentario: os.getgroups
+
+
+Snippet   : os.getlogin.sublime-snippet
+CDATA     : os.getlogin()
+Comentario: os.getlogin
+
+
+Snippet   : os.getpgid.sublime-snippet
+CDATA     : os.getpgid(${1:pid})
+Comentario: os.getpgid
+
+
+Snippet   : os.getpgrp.sublime-snippet
+CDATA     : os.getpgrp()
+Comentario: os.getpgrp
+
+
+Snippet   : os.getpid.sublime-snippet
+CDATA     : os.getpid()
+Comentario: os.getpid
+
+
+Snippet   : os.getppid.sublime-snippet
+CDATA     : os.getppid()
+Comentario: os.getppid
+
+
+Snippet   : os.getpriority.sublime-snippet
+CDATA     : os.getpriority(${1:which}, ${2:who})
+Comentario: os.getpriority
+
+
+Snippet   : os.getresuid.sublime-snippet
+CDATA     : os.getresuid()
+Comentario: os.getresuid
+
+
+Snippet   : os.getresgid.sublime-snippet
+CDATA     : os.getresgid()
+Comentario: os.getresgid
+
+
+Snippet   : os.getuid.sublime-snippet
+CDATA     : os.getuid()
+Comentario: os.getuid
+
+
+Snippet   : os.initgroups.sublime-snippet
+CDATA     : os.initgroups(${1:username}, ${2:gid})
+Comentario: os.initgroups
+
+
+Snippet   : os.putenv.sublime-snippet
+CDATA     : os.putenv(${1:key}, ${2:value})
+Comentario: os.putenv
+
+
+Snippet   : os.setegid.sublime-snippet
+CDATA     : os.setegid(${1:egid})
+Comentario: os.setegid
+
+
+Snippet   : os.seteuid.sublime-snippet
+CDATA     : os.seteuid(${1:euid})
+Comentario: os.seteuid
+
+
+Snippet   : os.setgid.sublime-snippet
+CDATA     : os.setgid(${1:gid})
+Comentario: os.setgid
+
+
+Snippet   : os.setgroups.sublime-snippet
+CDATA     : os.setgroups(${1:groups})
+Comentario: os.setgroups
+
+
+Snippet   : os.setpgrp.sublime-snippet
+CDATA     : os.setpgrp()
+Comentario: os.setpgrp
+
+
+Snippet   : os.setpgid.sublime-snippet
+CDATA     : os.setpgid(${1:pid}, ${2:pgrp})
+Comentario: os.setpgid
+
+
+Snippet   : os.setpriority.sublime-snippet
+CDATA     : os.setpriority(${1:which}, ${2:who}, ${3:priority})
+Comentario: os.setpriority
+
+
+Snippet   : os.setregid.sublime-snippet
+CDATA     : os.setregid(${1:rgid}, ${2:egid})
+Comentario: os.setregid
+
+
+Snippet   : os.setresgid.sublime-snippet
+CDATA     : os.setresgid(${1:rgid}, ${2:egid}, ${3:sgid})
+Comentario: os.setresgid
+
+
+Snippet   : os.setresuid.sublime-snippet
+CDATA     : os.setresuid(${1:ruid}, ${2:euid}, ${3:suid})
+Comentario: os.setresuid
+
+
+Snippet   : os.setreuid.sublime-snippet
+CDATA     : os.setreuid(${1:ruid}, ${2:euid})
+Comentario: os.setreuid
+
+
+Snippet   : os.getsid.sublime-snippet
+CDATA     : os.getsid(${1:pid})
+Comentario: os.getsid
+
+
+Snippet   : os.setsid.sublime-snippet
+CDATA     : os.setsid()
+Comentario: os.setsid
+
+
+Snippet   : os.setuid.sublime-snippet
+CDATA     : os.setuid(${1:uid})
+Comentario: os.setuid
+
+
+Snippet   : os.strerror.sublime-snippet
+CDATA     : os.strerror(${1:code})
+Comentario: os.strerror
+
+
+Snippet   : os.umask.sublime-snippet
+CDATA     : os.umask(${1:mask})
+Comentario: os.umask
+
+
+Snippet   : os.uname.sublime-snippet
+CDATA     : os.uname()
+Comentario: os.uname
+
+
+Snippet   : os.unsetenv.sublime-snippet
+CDATA     : os.unsetenv(${1:key})
+Comentario: os.unsetenv
+
+
+Snippet   : os.fdopen.sublime-snippet
+CDATA     : os.fdopen(${1:fd}, ${2:*args}, ${3:**kwargs})
+Comentario: os.fdopen
+
+
+Snippet   : os.close.sublime-snippet
+CDATA     : os.close(${1:fd})
+Comentario: os.close
+
+
+Snippet   : os.closerange.sublime-snippet
+CDATA     : os.closerange(${1:fd_low}, ${2:fd_high})
+Comentario: os.closerange
+
+
+Snippet   : os.device_encoding.sublime-snippet
+CDATA     : os.device_encoding(${1:fd})
+Comentario: os.device_encoding
+
+
+Snippet   : os.dup.sublime-snippet
+CDATA     : os.dup(${1:fd})
+Comentario: os.dup
+
+
+Snippet   : os.dup2.sublime-snippet
+CDATA     : os.dup2(${1:fd}, ${2:fd2}${3:, ${4:inheritable=${5:True}}})
+Comentario: os.dup2
+
+
+Snippet   : os.fchmod.sublime-snippet
+CDATA     : os.fchmod(${1:fd}, ${2:mode})
+Comentario: os.fchmod
+
+
+Snippet   : os.fchown.sublime-snippet
+CDATA     : os.fchown(${1:fd}, ${2:uid}, ${3:gid})
+Comentario: os.fchown
+
+
+Snippet   : os.fdatasync.sublime-snippet
+CDATA     : os.fdatasync(${1:fd})
+Comentario: os.fdatasync
+
+
+Snippet   : os.fpathconf.sublime-snippet
+CDATA     : os.fpathconf(${1:fd}, ${2:name})
+Comentario: os.fpathconf
+
+
+Snippet   : os.fstat.sublime-snippet
+CDATA     : os.fstat(${1:fd})
+Comentario: os.fstat
+
+
+Snippet   : os.fstatvfs.sublime-snippet
+CDATA     : os.fstatvfs(${1:fd})
+Comentario: os.fstatvfs
+
+
+Snippet   : os.fsync.sublime-snippet
+CDATA     : os.fsync(${1:fd})
+Comentario: os.fsync
+
+
+Snippet   : os.ftruncate.sublime-snippet
+CDATA     : os.ftruncate(${1:fd}, ${2:length})
+Comentario: os.ftruncate
+
+
+Snippet   : os.get_blocking.sublime-snippet
+CDATA     : os.get_blocking(${1:fd})
+Comentario: os.get_blocking
+
+
+Snippet   : os.isatty.sublime-snippet
+CDATA     : os.isatty(${1:fd})
+Comentario: os.isatty
+
+
+Snippet   : os.lockf.sublime-snippet
+CDATA     : os.lockf(${1:fd}, ${2:cmd}, ${3:len})
+Comentario: os.lockf
+
+
+Snippet   : os.lseek.sublime-snippet
+CDATA     : os.lseek(${1:fd}, ${2:pos}, ${3:how})
+Comentario: os.lseek
+
+
+Snippet   : os.open.sublime-snippet
+CDATA     : os.open(${1:path}, ${2:flags}${3:, ${4:mode=${5:0o777}}, ${6:dir_fd=${7:None}}})
+Comentario: os.open
+
+
+Snippet   : os.openpty.sublime-snippet
+CDATA     : os.openpty()
+Comentario: os.openpty
+
+
+Snippet   : os.pipe.sublime-snippet
+CDATA     : os.pipe()
+Comentario: os.pipe
+
+
+Snippet   : os.pipe2.sublime-snippet
+CDATA     : os.pipe2(${1:flags})
+Comentario: os.pipe2
+
+
+Snippet   : os.posix_fallocate.sublime-snippet
+CDATA     : os.posix_fallocate(${1:fd}, ${2:offset}, ${3:len})
+Comentario: os.posix_fallocate
+
+
+Snippet   : os.posix_fadvise.sublime-snippet
+CDATA     : os.posix_fadvise(${1:fd}, ${2:offset}, ${3:len}, ${4:advice})
+Comentario: os.posix_fadvise
+
+
+Snippet   : os.pread.sublime-snippet
+CDATA     : os.pread(${1:fd}, ${2:buffersize}, ${3:offset})
+Comentario: os.pread
+
+
+Snippet   : os.pwrite.sublime-snippet
+CDATA     : os.pwrite(${1:fd}, ${2:str}, ${3:offset})
+Comentario: os.pwrite
+
+
+Snippet   : os.read.sublime-snippet
+CDATA     : os.read(${1:fd}, ${2:n})
+Comentario: os.read
+
+
+Snippet   : os.sendfile.sublime-snippet
+CDATA     : os.sendfile(${1:out}, ${2:in}, ${3:offset}, ${4:count})
+Comentario: os.sendfile
+
+
+Snippet   : os.set_blocking.sublime-snippet
+CDATA     : os.set_blocking(${1:fd}, ${2:blocking})
+Comentario: os.set_blocking
+
+
+Snippet   : os.readv.sublime-snippet
+CDATA     : os.readv(${1:fd}, ${2:buffers})
+Comentario: os.readv
+
+
+Snippet   : os.tcgetpgrp.sublime-snippet
+CDATA     : os.tcgetpgrp(${1:fd})
+Comentario: os.tcgetpgrp
+
+
+Snippet   : os.tcsetpgrp.sublime-snippet
+CDATA     : os.tcsetpgrp(${1:fd}, ${2:pg})
+Comentario: os.tcsetpgrp
+
+
+Snippet   : os.ttyname.sublime-snippet
+CDATA     : os.ttyname(${1:fd})
+Comentario: os.ttyname
+
+
+Snippet   : os.write.sublime-snippet
+CDATA     : os.write(${1:fd}, ${2:str})
+Comentario: os.write
+
+
+Snippet   : os.writev.sublime-snippet
+CDATA     : os.writev(${1:fd}, ${2:buffers})
+Comentario: os.writev
+
+
+Snippet   : os.get_terminal_size.sublime-snippet
+CDATA     : os.get_terminal_size(${1:${2:fd=${3:STDOUT_FILENO}}})
+Comentario: os.get_terminal_size
+
+
+Snippet   : os.get_inheritable.sublime-snippet
+CDATA     : os.get_inheritable(${1:fd})
+Comentario: os.get_inheritable
+
+
+Snippet   : os.set_inheritable.sublime-snippet
+CDATA     : os.set_inheritable(${1:fd}, ${2:inheritable})
+Comentario: os.set_inheritable
+
+
+Snippet   : os.get_handle_inheritable.sublime-snippet
+CDATA     : os.get_handle_inheritable(${1:handle})
+Comentario: os.get_handle_inheritable
+
+
+Snippet   : os.set_handle_inheritable.sublime-snippet
+CDATA     : os.set_handle_inheritable(${1:handle}, ${2:inheritable})
+Comentario: os.set_handle_inheritable
+
+
+Snippet   : os.access.sublime-snippet
+CDATA     : os.access(${1:path}, ${2:mode}${3:, ${4:dir_fd=${5:None}}, ${6:effective_ids=${7:False}}, ${8:follow_symlinks=${9:True}}})
+Comentario: os.access
+
+
+Snippet   : os.chdir.sublime-snippet
+CDATA     : os.chdir(${1:path})
+Comentario: os.chdir
+
+
+Snippet   : os.chflags.sublime-snippet
+CDATA     : os.chflags(${1:path}, ${2:flags}${3:, ${4:follow_symlinks=${5:True}}})
+Comentario: os.chflags
+
+
+Snippet   : os.chmod.sublime-snippet
+CDATA     : os.chmod(${1:path}, ${2:mode}${3:, ${4:dir_fd=${5:None}}, ${6:follow_symlinks=${7:True}}})
+Comentario: os.chmod
+
+
+Snippet   : os.chown.sublime-snippet
+CDATA     : os.chown(${1:path}, ${2:uid}, ${3:gid}${4:, ${5:dir_fd=${6:None}}, ${7:follow_symlinks=${8:True}}})
+Comentario: os.chown
+
+
+Snippet   : os.chroot.sublime-snippet
+CDATA     : os.chroot(${1:path})
+Comentario: os.chroot
+
+
+Snippet   : os.fchdir.sublime-snippet
+CDATA     : os.fchdir(${1:fd})
+Comentario: os.fchdir
+
+
+Snippet   : os.getcwd.sublime-snippet
+CDATA     : os.getcwd()
+Comentario: os.getcwd
+
+
+Snippet   : os.getcwdb.sublime-snippet
+CDATA     : os.getcwdb()
+Comentario: os.getcwdb
+
+
+Snippet   : os.lchflags.sublime-snippet
+CDATA     : os.lchflags(${1:path}, ${2:flags})
+Comentario: os.lchflags
+
+
+Snippet   : os.lchmod.sublime-snippet
+CDATA     : os.lchmod(${1:path}, ${2:mode})
+Comentario: os.lchmod
+
+
+Snippet   : os.lchown.sublime-snippet
+CDATA     : os.lchown(${1:path}, ${2:uid}, ${3:gid})
+Comentario: os.lchown
+
+
+Snippet   : os.link.sublime-snippet
+CDATA     : os.link(${1:src}, ${2:dst}${3:, ${4:src_dir_fd=${5:None}}, ${6:dst_dir_fd=${7:None}}, ${8:follow_symlinks=${9:True}}})
+Comentario: os.link
+
+
+Snippet   : os.listdir.sublime-snippet
+CDATA     : os.listdir(${1:${2:path=${3:'.'}}})
+Comentario: os.listdir
+
+
+Snippet   : os.lstat.sublime-snippet
+CDATA     : os.lstat(${1:path}${2:, ${3:dir_fd=${4:None}}})
+Comentario: os.lstat
+
+
+Snippet   : os.mkdir.sublime-snippet
+CDATA     : os.mkdir(${1:path}${2:, ${3:mode=${4:0o777}}, ${5:dir_fd=${6:None}}})
+Comentario: os.mkdir
+
+
+Snippet   : os.makedirs.sublime-snippet
+CDATA     : os.makedirs(${1:name}${2:, ${3:mode=${4:0o777}}, ${5:exist_ok=${6:False}}})
+Comentario: os.makedirs
+
+
+Snippet   : os.mkfifo.sublime-snippet
+CDATA     : os.mkfifo(${1:path}${2:, ${3:mode=${4:0o666}}, ${5:dir_fd=${6:None}}})
+Comentario: os.mkfifo
+
+
+Snippet   : os.mknod.sublime-snippet
+CDATA     : os.mknod(${1:path}${2:, ${3:mode=${4:0o600}}, ${5:device=${6:0}}, ${7:dir_fd=${8:None}}})
+Comentario: os.mknod
+
+
+Snippet   : os.major.sublime-snippet
+CDATA     : os.major(${1:device})
+Comentario: os.major
+
+
+Snippet   : os.minor.sublime-snippet
+CDATA     : os.minor(${1:device})
+Comentario: os.minor
+
+
+Snippet   : os.makedev.sublime-snippet
+CDATA     : os.makedev(${1:major}, ${2:minor})
+Comentario: os.makedev
+
+
+Snippet   : os.pathconf.sublime-snippet
+CDATA     : os.pathconf(${1:path}, ${2:name})
+Comentario: os.pathconf
+
+
+Snippet   : os.readlink.sublime-snippet
+CDATA     : os.readlink(${1:path}${2:, ${3:dir_fd=${4:None}}})
+Comentario: os.readlink
+
+
+Snippet   : os.remove.sublime-snippet
+CDATA     : os.remove(${1:path}${2:, ${3:dir_fd=${4:None}}})
+Comentario: os.remove
+
+
+Snippet   : os.removedirs.sublime-snippet
+CDATA     : os.removedirs(${1:name})
+Comentario: os.removedirs
+
+
+Snippet   : os.rename.sublime-snippet
+CDATA     : os.rename(${1:src}, ${2:dst}${3:, ${4:src_dir_fd=${5:None}}, ${6:dst_dir_fd=${7:None}}})
+Comentario: os.rename
+
+
+Snippet   : os.renames.sublime-snippet
+CDATA     : os.renames(${1:old}, ${2:new})
+Comentario: os.renames
+
+
+Snippet   : os.replace.sublime-snippet
+CDATA     : os.replace(${1:src}, ${2:dst}${3:, ${4:src_dir_fd=${5:None}}, ${6:dst_dir_fd=${7:None}}})
+Comentario: os.replace
+
+
+Snippet   : os.rmdir.sublime-snippet
+CDATA     : os.rmdir(${1:path}${2:, ${3:dir_fd=${4:None}}})
+Comentario: os.rmdir
+
+
+Snippet   : os.scandir.sublime-snippet
+CDATA     : os.scandir(${1:${2:path=${3:'.'}}})
+Comentario: os.scandir
+
+
+Snippet   : os.stat.sublime-snippet
+CDATA     : os.stat(${1:path}${2:, ${3:dir_fd=${4:None}}, ${5:follow_symlinks=${6:True}}})
+Comentario: os.stat
+
+
+Snippet   : os.stat_float_times.sublime-snippet
+CDATA     : os.stat_float_times(${1:[ newvalue ]})
+Comentario: os.stat_float_times
+
+
+Snippet   : os.statvfs.sublime-snippet
+CDATA     : os.statvfs(${1:path})
+Comentario: os.statvfs
+
+
+Snippet   : os.symlink.sublime-snippet
+CDATA     : os.symlink(${1:src}, ${2:dst}${3:, ${4:target_is_directory=${5:False}}, ${6:dir_fd=${7:None}}})
+Comentario: os.symlink
+
+
+Snippet   : os.sync.sublime-snippet
+CDATA     : os.sync()
+Comentario: os.sync
+
+
+Snippet   : os.truncate.sublime-snippet
+CDATA     : os.truncate(${1:path}, ${2:length})
+Comentario: os.truncate
+
+
+Snippet   : os.unlink.sublime-snippet
+CDATA     : os.unlink(${1:path}${2:, ${3:dir_fd=${4:None}}})
+Comentario: os.unlink
+
+
+Snippet   : os.utime.sublime-snippet
+CDATA     : os.utime(${1:path}${2:, ${3:times=${4:None}}, ${4:[ ns}, ${6:dir_fd=${7:None}}, ${8:follow_symlinks=${9:True}}})
+Comentario: os.utime
+
+
+Snippet   : os.walk.sublime-snippet
+CDATA     : os.walk(${1:top}${2:, ${3:topdown=${4:True}}, ${5:onerror=${6:None}}, ${7:followlinks=${8:False}}})
+Comentario: os.walk
+
+
+Snippet   : os.fwalk.sublime-snippet
+CDATA     : os.fwalk(${1:${2:top=${3:'.'}}, ${4:topdown=${5:True}}, ${6:onerror=${7:None}}, ${8:follow_symlinks=${9:False}}, ${10:dir_fd=${11:None}}})
+Comentario: os.fwalk
+
+
+Snippet   : os.getxattr.sublime-snippet
+CDATA     : os.getxattr(${1:path}, ${2:attribute}${3:, ${4:follow_symlinks=${5:True}}})
+Comentario: os.getxattr
+
+
+Snippet   : os.listxattr.sublime-snippet
+CDATA     : os.listxattr(${1:${2:path=${3:None}}, ${4:follow_symlinks=${5:True}}})
+Comentario: os.listxattr
+
+
+Snippet   : os.removexattr.sublime-snippet
+CDATA     : os.removexattr(${1:path}, ${2:attribute}${3:, ${4:follow_symlinks=${5:True}}})
+Comentario: os.removexattr
+
+
+Snippet   : os.setxattr.sublime-snippet
+CDATA     : os.setxattr(${1:path}, ${2:attribute}, ${3:value}${4:, ${5:flags=${6:0}}, ${7:follow_symlinks=${8:True}}})
+Comentario: os.setxattr
+
+
+Snippet   : os.abort.sublime-snippet
+CDATA     : os.abort()
+Comentario: os.abort
+
+
+Snippet   : os.execl.sublime-snippet
+CDATA     : os.execl(${1:path}, ${2:arg0}, ${3:arg1}, ${4:...})
+Comentario: os.execl
+
+
+Snippet   : os._exit.sublime-snippet
+CDATA     : os._exit(${1:n})
+Comentario: os._exit
+
+
+Snippet   : os.fork.sublime-snippet
+CDATA     : os.fork()
+Comentario: os.fork
+
+
+Snippet   : os.forkpty.sublime-snippet
+CDATA     : os.forkpty()
+Comentario: os.forkpty
+
+
+Snippet   : os.kill.sublime-snippet
+CDATA     : os.kill(${1:pid}, ${2:sig})
+Comentario: os.kill
+
+
+Snippet   : os.killpg.sublime-snippet
+CDATA     : os.killpg(${1:pgid}, ${2:sig})
+Comentario: os.killpg
+
+
+Snippet   : os.nice.sublime-snippet
+CDATA     : os.nice(${1:increment})
+Comentario: os.nice
+
+
+Snippet   : os.plock.sublime-snippet
+CDATA     : os.plock(${1:op})
+Comentario: os.plock
+
+
+Snippet   : os.popen.sublime-snippet
+CDATA     : os.popen(${1:cmd}${2:, ${3:mode=${4:'r'}}, ${5:buffering=${6:-1}}})
+Comentario: os.popen
+
+
+Snippet   : os.spawnl.sublime-snippet
+CDATA     : os.spawnl(${1:mode}, ${2:path}, ${3:...})
+Comentario: os.spawnl
+
+
+Snippet   : os.startfile.sublime-snippet
+CDATA     : os.startfile(${1:path [}, ${2:operation ]})
+Comentario: os.startfile
+
+
+Snippet   : os.system.sublime-snippet
+CDATA     : os.system(${1:command})
+Comentario: os.system
+
+
+Snippet   : os.times.sublime-snippet
+CDATA     : os.times()
+Comentario: os.times
+
+
+Snippet   : os.wait.sublime-snippet
+CDATA     : os.wait()
+Comentario: os.wait
+
+
+Snippet   : os.waitid.sublime-snippet
+CDATA     : os.waitid(${1:idtype}, ${2:id}, ${3:options})
+Comentario: os.waitid
+
+
+Snippet   : os.waitpid.sublime-snippet
+CDATA     : os.waitpid(${1:pid}, ${2:options})
+Comentario: os.waitpid
+
+
+Snippet   : os.wait3.sublime-snippet
+CDATA     : os.wait3(${1:options})
+Comentario: os.wait3
+
+
+Snippet   : os.wait4.sublime-snippet
+CDATA     : os.wait4(${1:pid}, ${2:options})
+Comentario: os.wait4
+
+
+Snippet   : os.WCOREDUMP.sublime-snippet
+CDATA     : os.WCOREDUMP(${1:status})
+Comentario: os.WCOREDUMP
+
+
+Snippet   : os.WIFCONTINUED.sublime-snippet
+CDATA     : os.WIFCONTINUED(${1:status})
+Comentario: os.WIFCONTINUED
+
+
+Snippet   : os.WIFSTOPPED.sublime-snippet
+CDATA     : os.WIFSTOPPED(${1:status})
+Comentario: os.WIFSTOPPED
+
+
+Snippet   : os.WIFSIGNALED.sublime-snippet
+CDATA     : os.WIFSIGNALED(${1:status})
+Comentario: os.WIFSIGNALED
+
+
+Snippet   : os.WIFEXITED.sublime-snippet
+CDATA     : os.WIFEXITED(${1:status})
+Comentario: os.WIFEXITED
+
+
+Snippet   : os.WEXITSTATUS.sublime-snippet
+CDATA     : os.WEXITSTATUS(${1:status})
+Comentario: os.WEXITSTATUS
+
+
+Snippet   : os.WSTOPSIG.sublime-snippet
+CDATA     : os.WSTOPSIG(${1:status})
+Comentario: os.WSTOPSIG
+
+
+Snippet   : os.WTERMSIG.sublime-snippet
+CDATA     : os.WTERMSIG(${1:status})
+Comentario: os.WTERMSIG
+
+
+Snippet   : os.sched_get_priority_min.sublime-snippet
+CDATA     : os.sched_get_priority_min(${1:policy})
+Comentario: os.sched_get_priority_min
+
+
+Snippet   : os.sched_get_priority_max.sublime-snippet
+CDATA     : os.sched_get_priority_max(${1:policy})
+Comentario: os.sched_get_priority_max
+
+
+Snippet   : os.sched_setscheduler.sublime-snippet
+CDATA     : os.sched_setscheduler(${1:pid}, ${2:policy}, ${3:param})
+Comentario: os.sched_setscheduler
+
+
+Snippet   : os.sched_getscheduler.sublime-snippet
+CDATA     : os.sched_getscheduler(${1:pid})
+Comentario: os.sched_getscheduler
+
+
+Snippet   : os.sched_setparam.sublime-snippet
+CDATA     : os.sched_setparam(${1:pid}, ${2:param})
+Comentario: os.sched_setparam
+
+
+Snippet   : os.sched_getparam.sublime-snippet
+CDATA     : os.sched_getparam(${1:pid})
+Comentario: os.sched_getparam
+
+
+Snippet   : os.sched_rr_get_interval.sublime-snippet
+CDATA     : os.sched_rr_get_interval(${1:pid})
+Comentario: os.sched_rr_get_interval
+
+
+Snippet   : os.sched_yield.sublime-snippet
+CDATA     : os.sched_yield()
+Comentario: os.sched_yield
+
+
+Snippet   : os.sched_setaffinity.sublime-snippet
+CDATA     : os.sched_setaffinity(${1:pid}, ${2:mask})
+Comentario: os.sched_setaffinity
+
+
+Snippet   : os.sched_getaffinity.sublime-snippet
+CDATA     : os.sched_getaffinity(${1:pid})
+Comentario: os.sched_getaffinity
+
+
+Snippet   : os.confstr.sublime-snippet
+CDATA     : os.confstr(${1:name})
+Comentario: os.confstr
+
+
+Snippet   : os.cpu_count.sublime-snippet
+CDATA     : os.cpu_count()
+Comentario: os.cpu_count
+
+
+Snippet   : os.getloadavg.sublime-snippet
+CDATA     : os.getloadavg()
+Comentario: os.getloadavg
+
+
+Snippet   : os.sysconf.sublime-snippet
+CDATA     : os.sysconf(${1:name})
+Comentario: os.sysconf
+
+
+Snippet   : os.urandom.sublime-snippet
+CDATA     : os.urandom(${1:n})
+Comentario: os.urandom
+
+
+Snippet   : os.path.abspath.sublime-snippet
+CDATA     : os.path.abspath(${1:path})
+Comentario: os.path.abspath
+
+
+Snippet   : os.path.basename.sublime-snippet
+CDATA     : os.path.basename(${1:path})
+Comentario: os.path.basename
+
+
+Snippet   : os.path.commonpath.sublime-snippet
+CDATA     : os.path.commonpath(${1:paths})
+Comentario: os.path.commonpath
+
+
+Snippet   : os.path.commonprefix.sublime-snippet
+CDATA     : os.path.commonprefix(${1:list})
+Comentario: os.path.commonprefix
+
+
+Snippet   : os.path.dirname.sublime-snippet
+CDATA     : os.path.dirname(${1:path})
+Comentario: os.path.dirname
+
+
+Snippet   : os.path.exists.sublime-snippet
+CDATA     : os.path.exists(${1:path})
+Comentario: os.path.exists
+
+
+Snippet   : os.path.lexists.sublime-snippet
+CDATA     : os.path.lexists(${1:path})
+Comentario: os.path.lexists
+
+
+Snippet   : os.path.expanduser.sublime-snippet
+CDATA     : os.path.expanduser(${1:path})
+Comentario: os.path.expanduser
+
+
+Snippet   : os.path.expandvars.sublime-snippet
+CDATA     : os.path.expandvars(${1:path})
+Comentario: os.path.expandvars
+
+
+Snippet   : os.path.getatime.sublime-snippet
+CDATA     : os.path.getatime(${1:path})
+Comentario: os.path.getatime
+
+
+Snippet   : os.path.getmtime.sublime-snippet
+CDATA     : os.path.getmtime(${1:path})
+Comentario: os.path.getmtime
+
+
+Snippet   : os.path.getctime.sublime-snippet
+CDATA     : os.path.getctime(${1:path})
+Comentario: os.path.getctime
+
+
+Snippet   : os.path.getsize.sublime-snippet
+CDATA     : os.path.getsize(${1:path})
+Comentario: os.path.getsize
+
+
+Snippet   : os.path.isabs.sublime-snippet
+CDATA     : os.path.isabs(${1:path})
+Comentario: os.path.isabs
+
+
+Snippet   : os.path.isfile.sublime-snippet
+CDATA     : os.path.isfile(${1:path})
+Comentario: os.path.isfile
+
+
+Snippet   : os.path.isdir.sublime-snippet
+CDATA     : os.path.isdir(${1:path})
+Comentario: os.path.isdir
+
+
+Snippet   : os.path.islink.sublime-snippet
+CDATA     : os.path.islink(${1:path})
+Comentario: os.path.islink
+
+
+Snippet   : os.path.ismount.sublime-snippet
+CDATA     : os.path.ismount(${1:path})
+Comentario: os.path.ismount
+
+
+Snippet   : os.path.join.sublime-snippet
+CDATA     : os.path.join(${1:path}, ${2:*paths})
+Comentario: os.path.join
+
+
+Snippet   : os.path.normcase.sublime-snippet
+CDATA     : os.path.normcase(${1:path})
+Comentario: os.path.normcase
+
+
+Snippet   : os.path.normpath.sublime-snippet
+CDATA     : os.path.normpath(${1:path})
+Comentario: os.path.normpath
+
+
+Snippet   : os.path.realpath.sublime-snippet
+CDATA     : os.path.realpath(${1:path})
+Comentario: os.path.realpath
+
+
+Snippet   : os.path.relpath.sublime-snippet
+CDATA     : os.path.relpath(${1:path}${2:, ${3:start=${4:os.curdir}}})
+Comentario: os.path.relpath
+
+
+Snippet   : os.path.samefile.sublime-snippet
+CDATA     : os.path.samefile(${1:path1}, ${2:path2})
+Comentario: os.path.samefile
+
+
+Snippet   : os.path.sameopenfile.sublime-snippet
+CDATA     : os.path.sameopenfile(${1:fp1}, ${2:fp2})
+Comentario: os.path.sameopenfile
+
+
+Snippet   : os.path.samestat.sublime-snippet
+CDATA     : os.path.samestat(${1:stat1}, ${2:stat2})
+Comentario: os.path.samestat
+
+
+Snippet   : os.path.split.sublime-snippet
+CDATA     : os.path.split(${1:path})
+Comentario: os.path.split
+
+
+Snippet   : os.path.splitdrive.sublime-snippet
+CDATA     : os.path.splitdrive(${1:path})
+Comentario: os.path.splitdrive
+
+
+Snippet   : os.path.splitext.sublime-snippet
+CDATA     : os.path.splitext(${1:path})
+Comentario: os.path.splitext
+
+
+Snippet   : os.path.splitunc.sublime-snippet
+CDATA     : os.path.splitunc(${1:path})
+Comentario: os.path.splitunc
+
+
+Snippet   : re.compile.sublime-snippet
+CDATA     : re.compile(${1:pattern}${2:, ${3:flags=${4:0}}})
+Comentario: re.compile
+
+
+Snippet   : re.search.sublime-snippet
+CDATA     : re.search(${1:pattern}, ${2:string}${3:, ${4:flags=${5:0}}})
+Comentario: re.search
+
+
+Snippet   : re.match.sublime-snippet
+CDATA     : re.match(${1:pattern}, ${2:string}${3:, ${4:flags=${5:0}}})
+Comentario: re.match
+
+
+Snippet   : re.fullmatch.sublime-snippet
+CDATA     : re.fullmatch(${1:pattern}, ${2:string}${3:, ${4:flags=${5:0}}})
+Comentario: re.fullmatch
+
+
+Snippet   : re.split.sublime-snippet
+CDATA     : re.split(${1:pattern}, ${2:string}${3:, ${4:maxsplit=${5:0}}, ${6:flags=${7:0}}})
+Comentario: re.split
+
+
+Snippet   : re.findall.sublime-snippet
+CDATA     : re.findall(${1:pattern}, ${2:string}${3:, ${4:flags=${5:0}}})
+Comentario: re.findall
+
+
+Snippet   : re.finditer.sublime-snippet
+CDATA     : re.finditer(${1:pattern}, ${2:string}${3:, ${4:flags=${5:0}}})
+Comentario: re.finditer
+
+
+Snippet   : re.sub.sublime-snippet
+CDATA     : re.sub(${1:pattern}, ${2:repl}, ${3:string}${4:, ${5:count=${6:0}}, ${7:flags=${8:0}}})
+Comentario: re.sub
+
+
+Snippet   : re.subn.sublime-snippet
+CDATA     : re.subn(${1:pattern}, ${2:repl}, ${3:string}${4:, ${5:count=${6:0}}, ${7:flags=${8:0}}})
+Comentario: re.subn
+
+
+Snippet   : re.escape.sublime-snippet
+CDATA     : re.escape(${1:string})
+Comentario: re.escape
+
+
+Snippet   : re.purge.sublime-snippet
+CDATA     : re.purge()
+Comentario: re.purge
+
+
+Snippet   : math.ceil.sublime-snippet
+CDATA     : math.ceil(${1:x})
+Comentario: math.ceil
+
+
+Snippet   : math.copysign.sublime-snippet
+CDATA     : math.copysign(${1:x}, ${2:y})
+Comentario: math.copysign
+
+
+Snippet   : math.fabs.sublime-snippet
+CDATA     : math.fabs(${1:x})
+Comentario: math.fabs
+
+
+Snippet   : math.factorial.sublime-snippet
+CDATA     : math.factorial(${1:x})
+Comentario: math.factorial
+
+
+Snippet   : math.floor.sublime-snippet
+CDATA     : math.floor(${1:x})
+Comentario: math.floor
+
+
+Snippet   : math.fmod.sublime-snippet
+CDATA     : math.fmod(${1:x}, ${2:y})
+Comentario: math.fmod
+
+
+Snippet   : math.frexp.sublime-snippet
+CDATA     : math.frexp(${1:x})
+Comentario: math.frexp
+
+
+Snippet   : math.fsum.sublime-snippet
+CDATA     : math.fsum(${1:iterable})
+Comentario: math.fsum
+
+
+Snippet   : math.gcd.sublime-snippet
+CDATA     : math.gcd(${1:a}, ${2:b})
+Comentario: math.gcd
+
+
+Snippet   : math.isclose.sublime-snippet
+CDATA     : math.isclose(${1:a}, ${2:b}${3:, ${4:rel_tol=${5:1e-09}}, ${6:abs_tol=${7:0.0}}})
+Comentario: math.isclose
+
+
+Snippet   : math.isfinite.sublime-snippet
+CDATA     : math.isfinite(${1:x})
+Comentario: math.isfinite
+
+
+Snippet   : math.isinf.sublime-snippet
+CDATA     : math.isinf(${1:x})
+Comentario: math.isinf
+
+
+Snippet   : math.isnan.sublime-snippet
+CDATA     : math.isnan(${1:x})
+Comentario: math.isnan
+
+
+Snippet   : math.ldexp.sublime-snippet
+CDATA     : math.ldexp(${1:x}, ${2:i})
+Comentario: math.ldexp
+
+
+Snippet   : math.modf.sublime-snippet
+CDATA     : math.modf(${1:x})
+Comentario: math.modf
+
+
+Snippet   : math.trunc.sublime-snippet
+CDATA     : math.trunc(${1:x})
+Comentario: math.trunc
+
+
+Snippet   : math.exp.sublime-snippet
+CDATA     : math.exp(${1:x})
+Comentario: math.exp
+
+
+Snippet   : math.expm1.sublime-snippet
+CDATA     : math.expm1(${1:x})
+Comentario: math.expm1
+
+
+Snippet   : math.log.sublime-snippet
+CDATA     : math.log(${1:x [}, ${2:base ]})
+Comentario: math.log
+
+
+Snippet   : math.log1p.sublime-snippet
+CDATA     : math.log1p(${1:x})
+Comentario: math.log1p
+
+
+Snippet   : math.log2.sublime-snippet
+CDATA     : math.log2(${1:x})
+Comentario: math.log2
+
+
+Snippet   : math.log10.sublime-snippet
+CDATA     : math.log10(${1:x})
+Comentario: math.log10
+
+
+Snippet   : math.pow.sublime-snippet
+CDATA     : math.pow(${1:x}, ${2:y})
+Comentario: math.pow
+
+
+Snippet   : math.sqrt.sublime-snippet
+CDATA     : math.sqrt(${1:x})
+Comentario: math.sqrt
+
+
+Snippet   : math.acos.sublime-snippet
+CDATA     : math.acos(${1:x})
+Comentario: math.acos
+
+
+Snippet   : math.asin.sublime-snippet
+CDATA     : math.asin(${1:x})
+Comentario: math.asin
+
+
+Snippet   : math.atan.sublime-snippet
+CDATA     : math.atan(${1:x})
+Comentario: math.atan
+
+
+Snippet   : math.atan2.sublime-snippet
+CDATA     : math.atan2(${1:y}, ${2:x})
+Comentario: math.atan2
+
+
+Snippet   : math.cos.sublime-snippet
+CDATA     : math.cos(${1:x})
+Comentario: math.cos
+
+
+Snippet   : math.hypot.sublime-snippet
+CDATA     : math.hypot(${1:x}, ${2:y})
+Comentario: math.hypot
+
+
+Snippet   : math.sin.sublime-snippet
+CDATA     : math.sin(${1:x})
+Comentario: math.sin
+
+
+Snippet   : math.tan.sublime-snippet
+CDATA     : math.tan(${1:x})
+Comentario: math.tan
+
+
+Snippet   : math.degrees.sublime-snippet
+CDATA     : math.degrees(${1:x})
+Comentario: math.degrees
+
+
+Snippet   : math.radians.sublime-snippet
+CDATA     : math.radians(${1:x})
+Comentario: math.radians
+
+
+Snippet   : math.acosh.sublime-snippet
+CDATA     : math.acosh(${1:x})
+Comentario: math.acosh
+
+
+Snippet   : math.asinh.sublime-snippet
+CDATA     : math.asinh(${1:x})
+Comentario: math.asinh
+
+
+Snippet   : math.atanh.sublime-snippet
+CDATA     : math.atanh(${1:x})
+Comentario: math.atanh
+
+
+Snippet   : math.cosh.sublime-snippet
+CDATA     : math.cosh(${1:x})
+Comentario: math.cosh
+
+
+Snippet   : math.sinh.sublime-snippet
+CDATA     : math.sinh(${1:x})
+Comentario: math.sinh
+
+
+Snippet   : math.tanh.sublime-snippet
+CDATA     : math.tanh(${1:x})
+Comentario: math.tanh
+
+
+Snippet   : math.erf.sublime-snippet
+CDATA     : math.erf(${1:x})
+Comentario: math.erf
+
+
+Snippet   : math.erfc.sublime-snippet
+CDATA     : math.erfc(${1:x})
+Comentario: math.erfc
+
+
+Snippet   : math.gamma.sublime-snippet
+CDATA     : math.gamma(${1:x})
+Comentario: math.gamma
+
+
+Snippet   : math.lgamma.sublime-snippet
+CDATA     : math.lgamma(${1:x})
+Comentario: math.lgamma
+
+

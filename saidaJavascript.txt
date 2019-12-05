@@ -1,0 +1,607 @@
+Snippet   : charAt.sublime-snippet
+CDATA     : charAt(${1:index})
+Comentario: String
+
+
+Snippet   : charCodeAt.sublime-snippet
+CDATA     : charCodeAt(${1:index})
+Comentario: String
+
+
+Snippet   : concat.sublime-snippet
+CDATA     : concat(${1:string1}, ${2:string2})
+Comentario: String
+
+
+Snippet   : fromCharCode.sublime-snippet
+CDATA     : fromCharCode(${1:n1}, ${2:n2})
+Comentario: String
+
+
+Snippet   : indexOf.sublime-snippet
+CDATA     : indexOf(${1:searchvalue}, ${2:start})
+Comentario: String
+
+
+Snippet   : lastIndexOf.sublime-snippet
+CDATA     : lastIndexOf(${1:searchvalue}, ${2:start})
+Comentario: String
+
+
+Snippet   : localeCompare.sublime-snippet
+CDATA     : localeCompare(${1:compareString})
+Comentario: String
+
+
+Snippet   : match.sublime-snippet
+CDATA     : match(${1:regexp})
+Comentario: String
+
+
+Snippet   : replace.sublime-snippet
+CDATA     : replace(${1:searchvalue}, ${2:newvalue})
+Comentario: String
+
+
+Snippet   : search.sublime-snippet
+CDATA     : search(${1:searchvalue})
+Comentario: String
+
+
+Snippet   : slice.sublime-snippet
+CDATA     : slice(${1:start}, ${2:end})
+Comentario: String
+
+
+Snippet   : split.sublime-snippet
+CDATA     : split(${1:separator}, ${2:limit})
+Comentario: String
+
+
+Snippet   : substr.sublime-snippet
+CDATA     : substr(${1:start}, ${2:length})
+Comentario: String
+
+
+Snippet   : substring.sublime-snippet
+CDATA     : substring(${1:start}, ${2:end})
+Comentario: String
+
+
+Snippet   : toLocaleLowerCase.sublime-snippet
+CDATA     : toLocaleLowerCase()
+Comentario: String
+
+
+Snippet   : toLocaleUpperCase.sublime-snippet
+CDATA     : toLocaleUpperCase()
+Comentario: String
+
+
+Snippet   : toLowerCase.sublime-snippet
+CDATA     : toLowerCase()
+Comentario: String
+
+
+Snippet   : toUpperCase.sublime-snippet
+CDATA     : toUpperCase()
+Comentario: String
+
+
+Snippet   : trim.sublime-snippet
+CDATA     : trim()
+Comentario: String
+
+
+Snippet   : toFixed.sublime-snippet
+CDATA     : toFixed(${1:x})
+Comentario: Number
+
+
+Snippet   : toExponential.sublime-snippet
+CDATA     : toExponential(${1:x})
+Comentario: Number
+
+
+Snippet   : toPrecision.sublime-snippet
+CDATA     : toPrecision(${1:x})
+Comentario: Number
+
+
+Snippet   : abs.sublime-snippet
+CDATA     : abs(${1:x})
+Comentario: Math
+
+
+Snippet   : asin.sublime-snippet
+CDATA     : asin(${1:x})
+Comentario: Math
+
+
+Snippet   : acos.sublime-snippet
+CDATA     : acos(${1:x})
+Comentario: Math
+
+
+Snippet   : ceil.sublime-snippet
+CDATA     : ceil(${1:x})
+Comentario: Math
+
+
+Snippet   : cos.sublime-snippet
+CDATA     : cos(${1:x})
+Comentario: Math
+
+
+Snippet   : atan.sublime-snippet
+CDATA     : atan(${1:x})
+Comentario: Math
+
+
+Snippet   : floor.sublime-snippet
+CDATA     : floor(${1:x})
+Comentario: Math
+
+
+Snippet   : log.sublime-snippet
+CDATA     : log(${1:x})
+Comentario: Math
+
+
+Snippet   : exp.sublime-snippet
+CDATA     : exp(${1:x})
+Comentario: Math
+
+
+Snippet   : atan2.sublime-snippet
+CDATA     : atan2(${1:y}, ${2:x})
+Comentario: Math
+
+
+Snippet   : min.sublime-snippet
+CDATA     : min(${1:n1}, ${2:n2})
+Comentario: Math
+
+
+Snippet   : pow.sublime-snippet
+CDATA     : pow(${1:x}, ${2:y})
+Comentario: Math
+
+
+Snippet   : random.sublime-snippet
+CDATA     : random()
+Comentario: Math
+
+
+Snippet   : round.sublime-snippet
+CDATA     : round(${1:x})
+Comentario: Math
+
+
+Snippet   : max.sublime-snippet
+CDATA     : max(${1:n1}, ${2:n2})
+Comentario: Math
+
+
+Snippet   : sqrt.sublime-snippet
+CDATA     : sqrt(${1:x})
+Comentario: Math
+
+
+Snippet   : sin.sublime-snippet
+CDATA     : sin(${1:x})
+Comentario: Math
+
+
+Snippet   : tan.sublime-snippet
+CDATA     : tan(${1:x})
+Comentario: Math
+
+
+Snippet   : getDate.sublime-snippet
+CDATA     : getDate()
+Comentario: Date
+
+
+Snippet   : getFullYear.sublime-snippet
+CDATA     : getFullYear()
+Comentario: Date
+
+
+Snippet   : getMilliseconds.sublime-snippet
+CDATA     : getMilliseconds()
+Comentario: Date
+
+
+Snippet   : getHours.sublime-snippet
+CDATA     : getHours()
+Comentario: Date
+
+
+Snippet   : getDay.sublime-snippet
+CDATA     : getDay()
+Comentario: Date
+
+
+Snippet   : getMinutes.sublime-snippet
+CDATA     : getMinutes()
+Comentario: Date
+
+
+Snippet   : getMonth.sublime-snippet
+CDATA     : getMonth()
+Comentario: Date
+
+
+Snippet   : getSeconds.sublime-snippet
+CDATA     : getSeconds()
+Comentario: Date
+
+
+Snippet   : getUTCDate.sublime-snippet
+CDATA     : getUTCDate()
+Comentario: Date
+
+
+Snippet   : getTimezoneOffset.sublime-snippet
+CDATA     : getTimezoneOffset()
+Comentario: Date
+
+
+Snippet   : getUTCDay.sublime-snippet
+CDATA     : getUTCDay()
+Comentario: Date
+
+
+Snippet   : getTime.sublime-snippet
+CDATA     : getTime()
+Comentario: Date
+
+
+Snippet   : getUTCFullYear.sublime-snippet
+CDATA     : getUTCFullYear()
+Comentario: Date
+
+
+Snippet   : getUTCHours.sublime-snippet
+CDATA     : getUTCHours()
+Comentario: Date
+
+
+Snippet   : getUTCSeconds.sublime-snippet
+CDATA     : getUTCSeconds()
+Comentario: Date
+
+
+Snippet   : getUTCMonth.sublime-snippet
+CDATA     : getUTCMonth()
+Comentario: Date
+
+
+Snippet   : getUTCMinutes.sublime-snippet
+CDATA     : getUTCMinutes()
+Comentario: Date
+
+
+Snippet   : parse.sublime-snippet
+CDATA     : parse(${1:datestring})
+Comentario: Date
+
+
+Snippet   : setDate.sublime-snippet
+CDATA     : setDate(${1:day})
+Comentario: Date
+
+
+Snippet   : getUTCMilliseconds.sublime-snippet
+CDATA     : getUTCMilliseconds()
+Comentario: Date
+
+
+Snippet   : setHours.sublime-snippet
+CDATA     : setHours(${1:hour}, ${2:min}, ${3:sec}, ${4:millisec})
+Comentario: Date
+
+
+Snippet   : setMinutes.sublime-snippet
+CDATA     : setMinutes(${1:min}, ${2:sec}, ${3:millisec})
+Comentario: Date
+
+
+Snippet   : setSeconds.sublime-snippet
+CDATA     : setSeconds(${1:sec}, ${2:millisec})
+Comentario: Date
+
+
+Snippet   : setUTCDate.sublime-snippet
+CDATA     : setUTCDate(${1:day})
+Comentario: Date
+
+
+Snippet   : setTime.sublime-snippet
+CDATA     : setTime(${1:millisec})
+Comentario: Date
+
+
+Snippet   : setFullYear.sublime-snippet
+CDATA     : setFullYear(${1:year}, ${2:month}, ${3:day})
+Comentario: Date
+
+
+Snippet   : setMonth.sublime-snippet
+CDATA     : setMonth(${1:month}, ${2:day})
+Comentario: Date
+
+
+Snippet   : setMilliseconds.sublime-snippet
+CDATA     : setMilliseconds(${1:millisec})
+Comentario: Date
+
+
+Snippet   : setUTCHours.sublime-snippet
+CDATA     : setUTCHours(${1:hour}, ${2:min}, ${3:sec}, ${4:millisec})
+Comentario: Date
+
+
+Snippet   : setUTCMilliseconds.sublime-snippet
+CDATA     : setUTCMilliseconds(${1:millisec})
+Comentario: Date
+
+
+Snippet   : setUTCMinutes.sublime-snippet
+CDATA     : setUTCMinutes(${1:min}, ${2:sec}, ${3:millisec})
+Comentario: Date
+
+
+Snippet   : setUTCFullYear.sublime-snippet
+CDATA     : setUTCFullYear(${1:year}, ${2:month}, ${3:day})
+Comentario: Date
+
+
+Snippet   : setUTCMonth.sublime-snippet
+CDATA     : setUTCMonth(${1:month}, ${2:day})
+Comentario: Date
+
+
+Snippet   : setUTCSeconds.sublime-snippet
+CDATA     : setUTCSeconds(${1:sec}, ${2:millisec})
+Comentario: Date
+
+
+Snippet   : toDateString.sublime-snippet
+CDATA     : toDateString()
+Comentario: Date
+
+
+Snippet   : toUTCString.sublime-snippet
+CDATA     : toUTCString()
+Comentario: Date
+
+
+Snippet   : toJSON.sublime-snippet
+CDATA     : toJSON()
+Comentario: Date
+
+
+Snippet   : toISOString.sublime-snippet
+CDATA     : toISOString()
+Comentario: Date
+
+
+Snippet   : toLocaleDateString.sublime-snippet
+CDATA     : toLocaleDateString()
+Comentario: Date
+
+
+Snippet   : toLocaleTimeString.sublime-snippet
+CDATA     : toLocaleTimeString()
+Comentario: Date
+
+
+Snippet   : toLocaleString.sublime-snippet
+CDATA     : toLocaleString()
+Comentario: Date
+
+
+Snippet   : UTC.sublime-snippet
+CDATA     : UTC(${1:year}, ${2:month}, ${3:day}, ${4:hours}, ${5:minutes}, ${6:seconds}, ${7:millisec})
+Comentario: Date
+
+
+Snippet   : toTimeString.sublime-snippet
+CDATA     : toTimeString()
+Comentario: Date
+
+
+Snippet   : concat.sublime-snippet
+CDATA     : concat(${1:array2}, ${2:array3})
+Comentario: Array
+
+
+Snippet   : indexOf.sublime-snippet
+CDATA     : indexOf(${1:item}, ${2:start})
+Comentario: Array
+
+
+Snippet   : join.sublime-snippet
+CDATA     : join(${1:separator})
+Comentario: Array
+
+
+Snippet   : pop.sublime-snippet
+CDATA     : pop()
+Comentario: Array
+
+
+Snippet   : reverse.sublime-snippet
+CDATA     : reverse()
+Comentario: Array
+
+
+Snippet   : push.sublime-snippet
+CDATA     : push(${1:item1}, ${2:item2})
+Comentario: Array
+
+
+Snippet   : slice.sublime-snippet
+CDATA     : slice(${1:start}, ${2:end})
+Comentario: Array
+
+
+Snippet   : splice.sublime-snippet
+CDATA     : splice(${1:index}, ${2:howmany}, ${3:item})
+Comentario: Array
+
+
+Snippet   : sort.sublime-snippet
+CDATA     : sort(${1:compareFunction})
+Comentario: Array
+
+
+Snippet   : shift.sublime-snippet
+CDATA     : shift()
+Comentario: Array
+
+
+Snippet   : lastIndexOf.sublime-snippet
+CDATA     : lastIndexOf(${1:item}, ${2:start})
+Comentario: Array
+
+
+Snippet   : unshift.sublime-snippet
+CDATA     : unshift(${1:item1}, ${2:item2})
+Comentario: Array
+
+
+Snippet   : decodeURI.sublime-snippet
+CDATA     : decodeURI(${1:uri})
+Comentario: Global
+
+
+Snippet   : encodeURIComponent.sublime-snippet
+CDATA     : encodeURIComponent(${1:uri})
+Comentario: Global
+
+
+Snippet   : eval.sublime-snippet
+CDATA     : eval(${1:string})
+Comentario: Global
+
+
+Snippet   : escape.sublime-snippet
+CDATA     : escape(${1:string})
+Comentario: Global
+
+
+Snippet   : decodeURIComponent.sublime-snippet
+CDATA     : decodeURIComponent(${1:uri})
+Comentario: Global
+
+
+Snippet   : encodeURI.sublime-snippet
+CDATA     : encodeURI(${1:uri})
+Comentario: Global
+
+
+Snippet   : isNaN.sublime-snippet
+CDATA     : isNaN(${1:value})
+Comentario: Global
+
+
+Snippet   : Number.sublime-snippet
+CDATA     : Number(${1:object})
+Comentario: Global
+
+
+Snippet   : parseInt.sublime-snippet
+CDATA     : parseInt(${1:string}, ${2:radix})
+Comentario: Global
+
+
+Snippet   : parseFloat.sublime-snippet
+CDATA     : parseFloat(${1:string})
+Comentario: Global
+
+
+Snippet   : String.sublime-snippet
+CDATA     : String(${1:object})
+Comentario: Global
+
+
+Snippet   : isFinite.sublime-snippet
+CDATA     : isFinite(${1:value})
+Comentario: Global
+
+
+Snippet   : unescape.sublime-snippet
+CDATA     : unescape(${1:string})
+Comentario: Global
+
+
+Snippet   : addEventListener.sublime-snippet
+CDATA     : addEventListener(${1:event}, ${2:function}, ${3:useCapture})
+Comentario: Document
+
+
+Snippet   : createElement.sublime-snippet
+CDATA     : createElement(${1:nodename})
+Comentario: Document
+
+
+Snippet   : getElementById.sublime-snippet
+CDATA     : getElementById(${1:elementID})
+Comentario: Document
+
+
+Snippet   : getElementsByClassName.sublime-snippet
+CDATA     : getElementsByClassName(${1:classname})
+Comentario: Document
+
+
+Snippet   : getElementsByName.sublime-snippet
+CDATA     : getElementsByName(${1:name})
+Comentario: Document
+
+
+Snippet   : getElementsByTagName.sublime-snippet
+CDATA     : getElementsByTagName(${1:tagname})
+Comentario: Document
+
+
+Snippet   : hasFocus.sublime-snippet
+CDATA     : hasFocus()
+Comentario: Document
+
+
+Snippet   : importNode.sublime-snippet
+CDATA     : importNode(${1:node}, ${2:deep})
+Comentario: Document
+
+
+Snippet   : querySelector.sublime-snippet
+CDATA     : querySelector(${1:CSS selectors})
+Comentario: Document
+
+
+Snippet   : querySelectorAll.sublime-snippet
+CDATA     : querySelectorAll(${1:CSS selectors})
+Comentario: Document
+
+
+Snippet   : removeEventListener.sublime-snippet
+CDATA     : removeEventListener(${1:event}, ${2:function}, ${3:useCapture})
+Comentario: Document
+
+
+Snippet   : renameNode.sublime-snippet
+CDATA     : renameNode(${1:node}, ${2:namespaceURI}, ${3:nodename})
+Comentario: Document
+
+
+Snippet   : foreach.sublime-snippet
+CDATA     : forEach(function (${1:elem}, ${2:index}) {
+	${0}
+});
+Comentario: foreach
+
+

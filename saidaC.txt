@@ -1,0 +1,481 @@
+Diretório "C:\Users\Leonardo\AppData\Roaming\Sublime Text 3\Packages\LeoCodeIntel\C snippets" já existe.
+Snippet   : isalnum.sublime-snippet
+CDATA     : isalnum(${1:int c})
+Comentario: isalnum
+
+
+Snippet   : isalpha.sublime-snippet
+CDATA     : isalpha(${1:int c})
+Comentario: isalpha
+
+
+Snippet   : isblank.sublime-snippet
+CDATA     : isblank(${1:int c})
+Comentario: isblank
+
+
+Snippet   : iscntrl.sublime-snippet
+CDATA     : iscntrl(${1:int c})
+Comentario: iscntrl
+
+
+Snippet   : isdigit.sublime-snippet
+CDATA     : isdigit(${1:int c})
+Comentario: isdigit
+
+
+Snippet   : islower.sublime-snippet
+CDATA     : islower(${1:int c})
+Comentario: islower
+
+
+Snippet   : tolower.sublime-snippet
+CDATA     : tolower(${1:int c})
+Comentario: tolower
+
+
+Snippet   : isupper.sublime-snippet
+CDATA     : isupper(${1:int c})
+Comentario: isupper
+
+
+Snippet   : toupper.sublime-snippet
+CDATA     : toupper(${1:int c})
+Comentario: toupper
+
+
+Snippet   : isspace.sublime-snippet
+CDATA     : isspace(${1:int c})
+Comentario: isspace
+
+
+Snippet   : isprint.sublime-snippet
+CDATA     : isprint(${1:int c})
+Comentario: isprint
+
+
+Snippet   : exp.sublime-snippet
+CDATA     : exp()
+Comentario: pow(e, x)
+
+
+Snippet   : log.sublime-snippet
+CDATA     : log(${1:double x})
+Comentario: base e
+
+
+Snippet   : log10.sublime-snippet
+CDATA     : log10(${1:double x})
+Comentario: log10
+
+
+Snippet   : log2.sublime-snippet
+CDATA     : log2(${1:double x})
+Comentario: log2
+
+
+Snippet   : pow.sublime-snippet
+CDATA     : pow(${1:base}, ${2:exponent})
+Comentario: pow
+
+
+Snippet   : sqrt.sublime-snippet
+CDATA     : sqrt(${1:double x})
+Comentario: sqrt
+
+
+Snippet   : ceil.sublime-snippet
+CDATA     : ceil(${1:double x})
+Comentario: ceil
+
+
+Snippet   : floor.sublime-snippet
+CDATA     : floor(${1:double x})
+Comentario: floor
+
+
+Snippet   : round.sublime-snippet
+CDATA     : round(${1:double x})
+Comentario: round
+
+
+Snippet   : abs.sublime-snippet
+CDATA     : abs(${1:int x})
+Comentario: int abs
+
+
+Snippet   : fabs.sublime-snippet
+CDATA     : fabs(${1:double x})
+Comentario: double abs
+
+
+Snippet   : modf.sublime-snippet
+CDATA     : modf(${1:double param}, ${2:double *intpart})
+Comentario: return fraction part
+
+
+Snippet   : max.sublime-snippet
+CDATA     : max(${1:int x}, ${2:int y})
+Comentario: max
+
+
+Snippet   : min.sublime-snippet
+CDATA     : min(${1:int x}, ${2:int y})
+Comentario: min
+
+
+Snippet   : fmax.sublime-snippet
+CDATA     : fmax(${1:double x}, ${2:double y})
+Comentario: fmax
+
+
+Snippet   : fmin.sublime-snippet
+CDATA     : fmin(${1:double x}, ${2:double y})
+Comentario: fmin
+
+
+Snippet   : cos.sublime-snippet
+CDATA     : cos(${1:x})
+Comentario: cos
+
+
+Snippet   : sin.sublime-snippet
+CDATA     : sin(${1:x})
+Comentario: sin
+
+
+Snippet   : tan.sublime-snippet
+CDATA     : tan(${1:x})
+Comentario: tan
+
+
+Snippet   : acos.sublime-snippet
+CDATA     : acos(${1:x})
+Comentario: acos
+
+
+Snippet   : asin.sublime-snippet
+CDATA     : asin(${1:x})
+Comentario: asin
+
+
+Snippet   : atan.sublime-snippet
+CDATA     : atan(${1:x})
+Comentario: atan
+
+
+Snippet   : fscanf.sublime-snippet
+CDATA     : fscanf(${1:FILE *stream}, ${2:char *format}, ${3:...})
+Comentario: fscanf
+
+
+Snippet   : sprintf.sublime-snippet
+CDATA     : sprintf(${1:char *str}, ${2:const char *format}, ${3:...})
+Comentario: sprintf
+
+
+Snippet   : snprintf.sublime-snippet
+CDATA     : snprintf(${1:char *str}, ${2:size_t n}, ${3:char *format}, ${4:...})
+Comentario: char str[n]
+
+
+Snippet   : sscanf.sublime-snippet
+CDATA     : sscanf(${1:char *str}, ${2:char *format}, ${3:...})
+Comentario: sscanf
+
+
+Snippet   : fgetc.sublime-snippet
+CDATA     : fgetc(${1:FILE *stream})
+Comentario: fgetc
+
+
+Snippet   : fgets.sublime-snippet
+CDATA     : fgets(${1:char *str}, ${2:int str_size}, ${3:FILE *stream})
+Comentario: fgets
+
+
+Snippet   : fputc.sublime-snippet
+CDATA     : fputc(${1:int character}, ${2:FILE *stream})
+Comentario: fputc
+
+
+Snippet   : fputs.sublime-snippet
+CDATA     : fputs(${1:char *str}, ${2:FILE *stream})
+Comentario: fputs
+
+
+Snippet   : putchar.sublime-snippet
+CDATA     : putchar(${1:int character})
+Comentario: putchar
+
+
+Snippet   : fopen.sublime-snippet
+CDATA     : fopen(${1:file_name}, ${2:mode})
+Comentario: fopen
+
+
+Snippet   : fclose.sublime-snippet
+CDATA     : fclose(${1:FILE *stream})
+Comentario: fclose
+
+
+Snippet   : fread.sublime-snippet
+CDATA     : fread(${1:void *ptr}, ${2:data_size}, ${3:data_count}, ${4:FILE *stream})
+Comentario: fread
+
+
+Snippet   : fwrite.sublime-snippet
+CDATA     : fwrite(${1:void *ptr}, ${2:data_size}, ${3:data_count}, ${4:FILE *stream})
+Comentario: fwrite
+
+
+Snippet   : fseek.sublime-snippet
+CDATA     : fseek(${1:FILE *stream}, ${2:offset}, ${3:origin})
+Comentario: fseek
+
+
+Snippet   : ftell.sublime-snippet
+CDATA     : ftell(${1:FILE *stream})
+Comentario: ftell
+
+
+Snippet   : rewind.sublime-snippet
+CDATA     : rewind(${1:FILE *stream})
+Comentario: rewind
+
+
+Snippet   : freopen.sublime-snippet
+CDATA     : freopen(${1:char *file_name_src}, ${2:mode}, ${3:FILE *file_dest})
+Comentario: freopen
+
+
+Snippet   : remove.sublime-snippet
+CDATA     : remove(${1:char *path})
+Comentario: remove
+
+
+Snippet   : rename.sublime-snippet
+CDATA     : rename(${1:char *old_path}, ${2:char *new_path})
+Comentario: rename
+
+
+Snippet   : tmpfile.sublime-snippet
+CDATA     : tmpfile()
+Comentario: return FILE *
+
+
+Snippet   : tmpnam.sublime-snippet
+CDATA     : tmpnam(${1:char *buffer[L_tmpnam]})
+Comentario: return char *
+
+
+Snippet   : atof.sublime-snippet
+CDATA     : atof(${1:str})
+Comentario: atof
+
+
+Snippet   : atoi.sublime-snippet
+CDATA     : atoi(${1:str})
+Comentario: atoi
+
+
+Snippet   : calloc.sublime-snippet
+CDATA     : calloc(${1:data_count}, ${2:data_size})
+Comentario: calloc
+
+
+Snippet   : malloc.sublime-snippet
+CDATA     : malloc(${1:size})
+Comentario: malloc
+
+
+Snippet   : free.sublime-snippet
+CDATA     : free(${1:ptr})
+Comentario: free
+
+
+Snippet   : realloc.sublime-snippet
+CDATA     : realloc(${1:ptr}, ${2:new_size})
+Comentario: realloc
+
+
+Snippet   : exit.sublime-snippet
+CDATA     : exit(${1:int code})
+Comentario: exit
+
+
+Snippet   : sizeof.sublime-snippet
+CDATA     : sizeof(${1:type})
+Comentario: sizeof
+
+
+Snippet   : qsort.sublime-snippet
+CDATA     : qsort(${1:void *array}, ${2:size_t data_count}, ${3:size_t data_size}, ${4:int func_compar})
+Comentario: qsort
+
+
+Snippet   : bsearch.sublime-snippet
+CDATA     : bsearch(${1:void *key}, ${2:void *array}, ${3:size_t data_count}, ${4:size_t data_size}, ${5:int func_compar})
+Comentario: bsearch
+
+
+Snippet   : rand.sublime-snippet
+CDATA     : rand()
+Comentario: rand
+
+
+Snippet   : srand.sublime-snippet
+CDATA     : srand(${1:seed})
+Comentario: srand
+
+
+Snippet   : strcpy.sublime-snippet
+CDATA     : strcpy(${1:dest}, ${2:src})
+Comentario: strcpy
+
+
+Snippet   : strncpy.sublime-snippet
+CDATA     : strncpy(${1:dest}, ${2:src}, ${3:n})
+Comentario: string[n]
+
+
+Snippet   : strcat.sublime-snippet
+CDATA     : strcat(${1:dest}, ${2:src})
+Comentario: strcat
+
+
+Snippet   : strncat.sublime-snippet
+CDATA     : strncat()
+Comentario: n = strlen(src)
+
+
+Snippet   : strcmp.sublime-snippet
+CDATA     : strcmp(${1:str1}, ${2:str2})
+Comentario: strcmp
+
+
+Snippet   : strchr.sublime-snippet
+CDATA     : strchr(${1:str}, ${2:int character})
+Comentario: strchr
+
+
+Snippet   : strpbrk.sublime-snippet
+CDATA     : strpbrk(${1:src}, ${2:char *key})
+Comentario: strpbrk
+
+
+Snippet   : strspn.sublime-snippet
+CDATA     : strspn(${1:src}, ${2:char *key})
+Comentario: strspn
+
+
+Snippet   : strstr.sublime-snippet
+CDATA     : strstr(${1:str}, ${2:char *key})
+Comentario: strstr
+
+
+Snippet   : strtok.sublime-snippet
+CDATA     : strtok(${1:str}, ${2:char *delimiters})
+Comentario: strtok
+
+
+Snippet   : strlen.sublime-snippet
+CDATA     : strlen(${1:str})
+Comentario: strlen
+
+
+Snippet   : memcpy.sublime-snippet
+CDATA     : memcpy(${1:void *dest}, ${2:void *src}, ${3:size_t num})
+Comentario: memcpy
+
+
+Snippet   : memmove.sublime-snippet
+CDATA     : memmove(${1:void *dest}, ${2:void *src}, ${3:size_t num})
+Comentario: memmove
+
+
+Snippet   : memcmp.sublime-snippet
+CDATA     : memcmp(${1:void *ptr1}, ${2:void *ptr2}, ${3:size_t num})
+Comentario: memcmp
+
+
+Snippet   : memchr.sublime-snippet
+CDATA     : memchr(${1:void *ptr}, ${2:int value}, ${3:size_t num})
+Comentario: return void *
+
+
+Snippet   : memset.sublime-snippet
+CDATA     : memset(${1:void *ptr}, ${2:int value}, ${3:size_t num})
+Comentario: memset
+
+
+Snippet   : time.sublime-snippet
+CDATA     : time(${1:NULL})
+Comentario: time
+
+
+Snippet   : pthread_cond_broadcast.sublime-snippet
+CDATA     : pthread_cond_broadcast(${1:pthread_cond_t *cond})
+Comentario: pthread_cond_broadcast
+
+
+Snippet   : pthread_cond_signal.sublime-snippet
+CDATA     : pthread_cond_signal(${1:pthread_cond_t *cond})
+Comentario: pthread_cond_signal
+
+
+Snippet   : pthread_cond_wait.sublime-snippet
+CDATA     : pthread_cond_wait(${1:pthread_cond_t *cond}, ${2:pthread_mutex_t *mutex})
+Comentario: pthread_cond_wait
+
+
+Snippet   : pthread_create.sublime-snippet
+CDATA     : pthread_create(${1:pthread_t *thread}, ${2:pthread_attr_t *attr}, ${3:void *funcStartRoutine}, ${4:void *arg})
+Comentario: pthread_create
+
+
+Snippet   : pthread_exit.sublime-snippet
+CDATA     : pthread_exit(${1:void *retval})
+Comentario: pthread_exit
+
+
+Snippet   : pthread_join.sublime-snippet
+CDATA     : pthread_join(${1:pthread_t thread}, ${2:void **retval})
+Comentario: pthread_join
+
+
+Snippet   : pthread_mutex_lock.sublime-snippet
+CDATA     : pthread_mutex_lock(${1:pthread_mutex_t *mutex})
+Comentario: pthread_mutex_lock
+
+
+Snippet   : pthread_mutex_lock.sublime-snippet
+CDATA     : pthread_mutex_lock(${1:pthread_mutex_t *mutex})
+Comentario: pthread_mutex_lock
+
+
+Snippet   : sem_init.sublime-snippet
+CDATA     : sem_init(${1:sem_t *semVariable}, ${2:0}, ${3:initValue})
+Comentario: sem_init
+
+
+Snippet   : sem_post.sublime-snippet
+CDATA     : sem_post(${1:sem_t *sem})
+Comentario: sem_post
+
+
+Snippet   : sem_wait.sublime-snippet
+CDATA     : sem_wait(${1:sem_t *sem})
+Comentario: sem_wait
+
+
+Snippet   : clocks_per_sec.sublime-snippet
+CDATA     : CLOCKS_PER_SEC
+Comentario: clocks_per_sec
+
+
+Snippet   : null.sublime-snippet
+CDATA     : NULL
+Comentario: null
+
+

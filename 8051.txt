@@ -1,0 +1,98 @@
+@dest: C:\Users\Leonardo\AppData\Roaming\Sublime Text 3\Packages\8051\Snippets
+@scope: source.asm.8051
+
+
+ACALL_addr                     ACALL ${1:addr}                                          ACALL addr
+ADD_A_#dado                    ADD A, #${1:dado}                                        ADD A, #dado
+ADD_A_@Ri                      ADD A, @${1:Ri}                                          ADD A, @Ri
+ADD_A_direto                   ADD A, ${1:direto}                                       ADD A, direto
+ADD_A_Rn                       ADD A, ${1:Rn}                                           ADD A, Rn
+ADDC_A_#dado                   ADDC A, #${1:dado}                                       ADDC A, #dado
+ADDC_A_@Ri                     ADDC A, @${1:Ri}                                         ADDC A, @Ri
+ADDC_A_direto                  ADDC A, ${1:direto}                                      ADDC A, direto
+ADDC_A_Rn                      ADDC A, ${1:Rn}                                          ADDC A, Rn
+AJMP_addr                      AJMP ${1:addr}                                           AJMP addr
+CJNE_@Ri_#dado_rel             CJNE @${1:Ri}, #${2:dado}, ${3:rel}                      CJNE @Ri, #dado, rel
+CJNE_A_#dado_rel               CJNE A, #${1:dado}, ${2:rel}                             CJNE A, #dado, rel
+CJNE_A_direto_rel              CJNE A, ${1:direto}, ${2:rel}                            CJNE A, direto, rel
+CJNE_Rn_#dado_rel              CJNE ${1:Rn}, #${2:dado}, ${3:rel}                       CJNE Rn, #dado, rel
+CLR_A                          CLR A                                                    CLR A
+CLR_bit                        CLR ${1:bit}                                             CLR bit
+CLR_C                          CLR C                                                    CLR C
+CPL_A                          CPL A                                                    CPL A
+CPL_bit                        CPL ${1:bit}                                             CPL bit
+CPL_C                          CPL C                                                    CPL C
+DA_A                           DA A                                                     DA A
+DEC_@Ri                        DEC @${1:Ri}                                             DEC @Ri
+DEC_A                          DEC A                                                    DEC A
+DEC_direto                     DEC ${1:direto}                                          DEC direto
+DEC_Rn                         DEC ${1:Rn}                                              DEC Rn
+DIV_AB                         DIV AB                                                   DIV AB
+DJNZ_direto_rel                DJNZ ${1:direto}, ${2:rel}                               DJNZ direto, rel
+DJNZ_Rn_rel                    DJNZ ${1:Rn}, ${2:rel}                                   DJNZ Rn, rel
+INC_@Ri                        INC @${1:Ri}                                             INC @Ri
+INC_A                          INC A                                                    INC A
+INC_direto                     INC ${1:direto}                                          INC direto
+INC_DPTR                       INC DPTR                                                 INC DPTR
+INC_Rn                         INC ${1:Rn}                                              INC Rn
+JB_bit_rel                     JB ${1:bit}, ${2:rel}                                    JB bit, rel
+JBC_bit_rel                    JBC ${1:bit}, ${2:rel}                                   JBC bit, rel
+JC_rel                         JC ${1:rel}                                              JC rel
+JMP_@A+DPTR                    JMP @A+DPTR                                              JMP @A+DPTR
+JNB_bit_rel                    JNB ${1:bit}, ${2:rel}                                   JNB bit, rel
+JNC_rel                        JNC ${1:rel}                                             JNC rel
+JNZ_rel                        JNZ ${1:rel}                                             JNZ rel
+JZ_rel                         JZ ${1:rel}                                              JZ rel
+LCALL_addr                     LCALL ${1:addr}                                          LCALL addr
+LJMP_addr                      LJMP ${1:addr}                                           LJMP addr
+MOV_@Ri_#dado                  MOV @${1:Ri}, #${2:dado}                                 MOV @Ri, #dado
+MOV_@Ri_A                      MOV @${1:Ri}, A                                          MOV @Ri, A
+MOV_@Ri_direto                 MOV @${1:Ri}, ${2:direto}                                MOV @Ri, direto
+MOV_A_#dado                    MOV A, #${1:dado}                                        MOV A, #dado
+MOV_A_@Ri                      MOV A, @${1:Ri}                                          MOV A, @Ri
+MOV_A_Rn                       MOV A, ${1:Rn}                                           MOV A, Rn
+MOV_bit_C                      MOV ${1:bit}, C                                          MOV bit, C
+MOV_C_bit                      MOV C, ${1:bit}                                          MOV C, bit
+MOV_direto_#dado               MOV ${1:direto}, #${2:dado}                              MOV direto, #dado
+MOV_direto_@Ri                 MOV ${1:direto}, @${2:Ri}                                MOV direto, @Ri
+MOV_direto_A                   MOV ${1:direto}, A                                       MOV direto, A
+MOV_direto_Rn                  MOV ${1:direto}, ${2:Rn}                                 MOV direto, Rn
+MOV_A_direto                   MOV A, ${1:direto}                                       MOV A, direto
+MOV_direto1_direto             MOV ${1:direto}, ${2:direto}                             MOV direto, direto
+MOV_DPTR_#dado16               MOV DPTR, #${1:dado16}                                   MOV DPTR, #dado16
+MOV_Rn_#dado                   MOV ${1:Rn}, #${2:dado}                                  MOV Rn, #dado
+MOV_Rn_A                       MOV ${1:Rn}, A                                           MOV Rn, A
+MOV_Rn_direto                  MOV ${1:Rn}, ${2:direto}                                 MOV Rn, direto
+MOVC_A_@A+DPTR                 MOVC A, @A+DPTR                                          MOVC A, @A+DPTR
+MOVC_A_@A+PC                   MOVC A, @A+PC                                            MOVC A, @A+PC
+MOVX_@DPTR_A                   MOVX @DPTR, A                                            MOVX @DPTR, A
+MOVX_@Ri_A                     MOVX @${1:Ri}, A                                         MOVX @Ri, A
+MOVX_A_@DPTR                   MOVX A, @DPTR                                            MOVX A, @DPTR
+MOVX_A_@Ri                     MOVX A, @${1:Ri}                                         MOVX A, @Ri
+MUL_AB                         MUL AB                                                   MUL AB
+NOP                            NOP                                                      NOP
+POP_direto                     POP ${1:direto}                                          POP direto
+PUSH_direto                    PUSH ${1:direto}                                         PUSH direto
+RET                            RET                                                      RET
+RETI                           RETI                                                     RETI
+RL_A                           RL A                                                     RL A
+RLC_A                          RLC A                                                    RLC A
+RR_A                           RR A                                                     RR A
+RRC_A                          RRC A                                                    RRC A
+SETB_bit                       SETB ${1:bit}                                            SETB bit
+SETB_C                         SETB C                                                   SETB C
+SJMP_rel                       SJMP ${1:rel}                                            SJMP rel
+SUBB_A_#dado                   SUBB A, #${1:dado}                                       SUBB A, #dado
+SUBB_A_@Ri                     SUBB A, @${1:Ri}                                         SUBB A, @Ri
+SUBB_A_direto                  SUBB A, ${1:direto}                                      SUBB A, direto
+SUBB_A_Rn                      SUBB A, ${1:Rn}                                          SUBB A, Rn
+SWAP_A                         SWAP A                                                   SWAP A
+XCH_A_@Ri                      XCH A, @${1:Ri}                                          XCH A, @Ri
+XCH_A_direto                   XCH A, ${1:direto}                                       XCH A, direto
+XCH_A_Rn                       XCH A, ${1:Rn}                                           XCH A, Rn
+XCHD_A_@Ri                     XCHD A, @${1:Ri}                                         XCHD A, @Ri
+XRL_A_#dado                    XRL A, #${1:dado}                                        XRL A, #dado
+XRL_A_@Ri                      XRL A, @${1:Ri}                                          XRL A, @Ri
+XRL_A_direto                   XRL A, ${1:direto}                                       XRL A, direto
+XRL_A_Rn                       XRL A, ${1:Rn}                                           XRL A, Rn
+XRL_direto_A                   XRL ${1:direto}, A                                       XRL direto, A
